@@ -38,6 +38,10 @@ body {
     color: var(--foreground);
 }
 
+section {
+    padding: 70px 17%;
+}
+
 /* |--| Header |-------------------------------------------------------------| */
 
 header {
@@ -66,7 +70,7 @@ header {
 
 .navbar a {
     color: var(--foreground);
-    font-size: 1.1rem;
+    font-size: 1.1rem;                               /* Perhaps make me bigger */
     font-weight: 500;
     padding: 10px 20px;
 }
@@ -84,14 +88,89 @@ header {
 
 /* |--| Home |---------------------------------------------------------------| */
 
+.home {
+    align-items: center;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 90vh;
+    width: 100%;
+}
+
+.home::before {
+    bottom: 0;
+    content: '';
+    background-image: url('images/space.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.home-text h1 {
+    color: var(--pink);
+    font-size: var(--big-font);
+}
+
+.home-text h2 {
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+.btn {
+   background: var(--pink);
+   border-radius: 0.5rem;
+   color: var(--foreground);
+   display: inline-block;
+   padding: 10px 20px; 
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px var(--purple);
+    transition: 0.4s;
+}
+
+.home-img {
+    height: auto;
+    max-width: 100%;
+    pointer-events: none;
+    width: 600px;
+}
+
 /* |--| About Me |-----------------------------------------------------------| */
+
+.about-me {
+
+}
 
 /* |--| Education |----------------------------------------------------------| */
 
+.education {
+
+}
+
 /* |--| Work Experience |----------------------------------------------------| */
+
+.work-experience {
+
+}
 
 /* |--| Personal Interests |-------------------------------------------------| */
 
+.personal-interests {
+
+}
+
 /* |--| Contact Me |---------------------------------------------------------| */
 
+.contact-me {
 
+}
