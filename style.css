@@ -33,6 +33,10 @@
     color: var(--background-color);
 }
 
+span::selection {
+    background: var(--purple);
+}
+
 body {
     background: var(--background-color);
     color: var(--foreground);
@@ -125,6 +129,13 @@ header {
     margin: 1rem 0 2rem;
 }
 
+.header-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 550px;
+}
+
 .btn {
    background: var(--pink);
    border-radius: 0.5rem;
@@ -138,6 +149,30 @@ header {
     transition: 0.4s;
 }
 
+.header-social {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.header-social a {
+    align-items: center;
+    background: var(--pink);
+    border-radius: 50%;
+    color: var(--foreground);
+    display: inline-flex;
+    font-size: 1.5rem;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+}
+
+.header-social a:hover {
+    box-shadow: 0 0 20px var(--purple);
+    transition: 0.4s;
+} 
+
 .home-img {
     height: auto;
     max-width: 100%;
@@ -148,7 +183,33 @@ header {
 /* |--| About Me |-----------------------------------------------------------| */
 
 .about-me {
+    align-items: center;
+    display: grid;
+    grid-gap: 1.5rem;;
+    grid-template-columns: repeat(2, 2fr);
+}
 
+.about-text h2 {
+    color: var(--pink);
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+.about-text p {
+    border-left: 2px solid var(--current-line);
+    line-height: 1.7;
+    margin: 0.8rem 0 1.8rem;
+    padding-left: 1rem;
+}
+
+.about-text p span {
+    color: var(--purple);
+}
+
+.about-img img {
+    height: auto;
+    max-width: 100%;
+    width: 480px;
 }
 
 /* |--| Education |----------------------------------------------------------| */
