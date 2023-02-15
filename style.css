@@ -46,6 +46,19 @@ section {
     padding: 70px 17%;
 }
 
+/* |--| Scrollbar |----------------------------------------------------------| */
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: var(--pink);
+    background-clip: content-box;
+}
+
 /* |--| Header |-------------------------------------------------------------| */
 
 header {
