@@ -15,6 +15,8 @@
 
     --big-font: 5rem;
     --h2-font: 2.25rem;
+    --h3-font: 1.75rem;
+    --h4-font: 1.25rem;
     --p-font: 0.9rem;
 }
 
@@ -81,7 +83,8 @@ header {
 
 .navbar a {
     color: var(--foreground);
-    font-size: 1.5rem;                               /* Perhaps make me bigger */
+    font-size: 1.5rem;
+    /* Perhaps make me bigger */
     font-weight: 500;
     padding: 10px 20px;
 }
@@ -145,11 +148,11 @@ header {
 }
 
 .btn {
-   background: var(--pink);
-   border-radius: 0.5rem;
-   color: var(--foreground);
-   display: inline-block;
-   padding: 10px 20px; 
+    background: var(--pink);
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    display: inline-block;
+    padding: 10px 20px;
 }
 
 .btn:hover {
@@ -179,7 +182,7 @@ header {
 .header-social a:hover {
     box-shadow: 0 0 20px var(--purple);
     transition: 0.4s;
-} 
+}
 
 .home-img {
     height: auto;
@@ -193,7 +196,7 @@ header {
 .about-me {
     align-items: center;
     display: grid;
-    grid-gap: 1.5rem;;
+    grid-gap: 1.5rem;
     grid-template-columns: repeat(2, 2fr);
 }
 
@@ -229,23 +232,26 @@ header {
 /* |--| Education |----------------------------------------------------------| */
 
 .education {
+    align-items: center;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 2fr);
+}
 
+.education-text h2 {
+    color: var(--pink);
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
 }
 
 /* |--| Work Experience |----------------------------------------------------| */
 
-.work-experience {
-
-}
+.work-experience {}
 
 /* |--| Personal Interests |-------------------------------------------------| */
 
-.personal-interests {
-
-}
+.personal-interests {}
 
 /* |--| Contact Me |---------------------------------------------------------| */
 
-.contact-me {
-
-}
+.contact-me {}
