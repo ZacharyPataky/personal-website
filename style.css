@@ -160,14 +160,14 @@ header {
     transition: 0.4s;
 }
 
-.header-social {
+.home-social {
     align-items: center;
     display: flex;
     justify-content: space-between;
     width: 350px;
 }
 
-.header-social a {
+.home-social a {
     align-items: center;
     background: var(--pink);
     border-radius: 50%;
@@ -179,7 +179,7 @@ header {
     width: 40px;
 }
 
-.header-social a:hover {
+.home-social a:hover {
     box-shadow: 0 0 20px var(--purple);
     transition: 0.4s;
 }
