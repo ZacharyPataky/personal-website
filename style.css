@@ -14,10 +14,10 @@
     --yellow: #F1FA8C;
 
     --big-font: 5rem;
-    --h2-font: 2.25rem;
-    --h3-font: 1.75rem;
-    --h4-font: 1.25rem;
-    --p-font: 0.9rem;
+    --h2-font: 3rem;
+    --h3-font: 2.25rem;
+    --h4-font: 1.75rem;
+    --p-font: 1.2rem;
 }
 
 * {
@@ -208,6 +208,7 @@ header {
 
 .about-text p {
     border-left: 2px solid var(--current-line);
+    font-size: var(--p-font);
     line-height: 1.7;
     margin: 0.8rem 0 1.8rem;
     padding-left: 1rem;
@@ -242,6 +243,122 @@ header {
     color: var(--pink);
     font-size: var(--h2-font);
     margin: 1rem 0 2rem;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-details .details-row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.3rem;
+}
+
+.education-details .details-row h3 {
+    color: var(--purple);
+    font-size: var(--h3-font);
+    transition: 0.4s;
+}
+
+.education-details .details-row h3:hover {
+    text-shadow: 0 0 20px var(--cyan);
+}
+
+.education-details .details-row h4 {
+    font-size: var(--h4-font);
+}
+
+.education-details .details-row h4 span {
+    color: var(--purple);
+    transition: 0.4s;
+}
+
+.education-details .details-row h4 span:hover {
+    text-shadow: 0 0 20px var(--cyan);
+}
+
+.education-details .details-row p {
+    font-size: var(--p-font);
+}
+
+.honors-awards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+}
+
+.honors-awards h4 {
+    font-size: var(--h4-font);
+}
+
+.honors-awards ul {
+    border-left: 1px solid var(--current-line);
+    line-height: 1.6rem;
+    margin-top: 0.4rem;
+    padding-left: 2rem;
+}
+
+.honors-awards ul li {
+    font-size: var(--p-font);
+    list-style-type: circle;
+}
+
+.course-highlights {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+}
+
+.course-highlights h4 {
+    font-size: var(--h4-font);
+}
+
+.course-highlights ul {
+    border-left: 1px solid var(--current-line);
+    column-count: 2;
+    line-height: 1.6rem;
+    margin-top: 0.4rem;
+    padding-left: 2rem;
+}
+
+.course-highlights ul li {
+    font-size: var(--p-font);
+    list-style-type: circle;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+}
+
+.activities h4 {
+    font-size: var(--h4-font);
+}
+
+.activities ul {
+    border-left: 1px solid var(--current-line);
+    line-height: 1.6rem;
+    margin-top: 0.4rem;
+    padding-left: 2rem;
+}
+
+.activities ul li {
+    font-size: var(--p-font);
+    list-style-type: circle;
+}
+
+.education-img img {
+    border: 10px solid var(--current-line);
+    border-radius: 1rem;
+    height: auto;
+    max-width: 100%;
+    pointer-events: none;
+    width: 860px;
 }
 
 /* |--| Work Experience |----------------------------------------------------| */
