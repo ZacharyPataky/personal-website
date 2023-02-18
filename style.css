@@ -15,8 +15,8 @@
 
     --big-font: 5rem;
     --h2-font: 3rem;
-    --h3-font: 2.25rem;
-    --h4-font: 1.75rem;
+    --h3-font: 2rem;
+    --h4-font: 1.5rem;
     --p-font: 1.17rem;
 }
 
@@ -222,7 +222,7 @@ header {
     border-left: 2px solid var(--current-line);
     font-size: var(--p-font);
     line-height: 1.7;
-    margin: 0.8rem 0 1.8rem;
+    margin: 0.8rem 0;
     padding-left: 1rem;
 }
 
@@ -248,7 +248,103 @@ header {
 
 /* |--| Work Experience |----------------------------------------------------| */
 
-.work-experience {}
+.work-experience {
+    /* text-align: center; */
+}
+
+.work-experience h2 {
+    color: var(--pink);
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+.work-container {
+    align-items: center;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+}
+
+.job {
+    align-items: center;
+    background-color: var(--current-line);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 0 2rem 2.5rem 2rem;
+    position: relative;
+}
+
+.job .job-img img {
+    height: auto;
+    width: 300px;
+}
+
+.job .employer {
+    color: var(--purple);
+}
+
+.job .employer:hover {
+    text-shadow: 0 0 20px var(--cyan);
+    transition: 0.4s;
+}
+
+.job .employer h3 {
+    font-size: var(--h3-font);
+}
+
+.job .employer h4 {
+    font-size: var(--h4-font);
+}
+
+.job .title-setting {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+    width: 100%;
+}
+
+.job .title-setting .title {
+    color: var(--purple);
+    font-size: var(--h4-font);
+    font-style: italic;
+}
+
+.job .title-setting .title:hover {
+    text-shadow: 0 0 20px var(--cyan);
+    transition: 0.4s;
+}
+
+.job .title-setting .setting {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--p-font);
+    justify-content: end;
+}
+
+.job .responsibilities {
+    font-size: var(--p-font);
+    margin-top: 0.8rem;
+    /* padding: 1rem; */
+}
+
+.job .responsibilities ul {
+    list-style-type: circle;
+    margin-left: 1rem;
+}
+
+.job .responsibilities ul li {
+    line-height: 1.7;
+    list-style-type: circle;
+    margin-bottom: 0.8rem;
+    text-indent: -1;
+}
 
 /* |--| Personal Interests |-------------------------------------------------| */
 
