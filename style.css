@@ -17,7 +17,7 @@
     --h2-font: 3rem;
     --h3-font: 2.25rem;
     --h4-font: 1.75rem;
-    --p-font: 1.2rem;
+    --p-font: 1.17rem;
 }
 
 * {
@@ -206,7 +206,19 @@ header {
     margin: 1rem 0 2rem;
 }
 
-.about-text p {
+.about-text .paragraph-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-text .paragraph-line pre {
+    color: var(--current-line);
+    font-size: var(--p-font);
+    margin-right: 1rem;
+    margin-top: 1.15rem;
+}
+
+.about-text .paragraph-line p {
     border-left: 2px solid var(--current-line);
     font-size: var(--p-font);
     line-height: 1.7;
@@ -214,11 +226,11 @@ header {
     padding-left: 1rem;
 }
 
-.about-text p span {
+.about-text .paragraph-line p span {
     color: var(--purple);
 }
 
-.about-text p span:hover {
+.about-text .paragraph-line p span:hover {
     text-shadow: 0 0 20px var(--cyan);
     transition: 0.4s;
 }
@@ -232,134 +244,7 @@ header {
 
 /* |--| Education |----------------------------------------------------------| */
 
-.education {
-    align-items: center;
-    display: grid;
-    grid-gap: 1.5rem;
-    grid-template-columns: repeat(2, 2fr);
-}
-
-.education-text h2 {
-    color: var(--pink);
-    font-size: var(--h2-font);
-    margin: 1rem 0 2rem;
-}
-
-.education-details {
-    display: flex;
-    flex-direction: column;
-}
-
-.education-details .details-row {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0.3rem;
-}
-
-.education-details .details-row h3 {
-    color: var(--purple);
-    font-size: var(--h3-font);
-    transition: 0.4s;
-}
-
-.education-details .details-row h3:hover {
-    text-shadow: 0 0 20px var(--cyan);
-}
-
-.education-details .details-row h4 {
-    font-size: var(--h4-font);
-}
-
-.education-details .details-row h4 span {
-    color: var(--purple);
-    transition: 0.4s;
-}
-
-.education-details .details-row h4 span:hover {
-    text-shadow: 0 0 20px var(--cyan);
-}
-
-.education-details .details-row p {
-    font-size: var(--p-font);
-}
-
-.honors-awards {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.2rem;
-}
-
-.honors-awards h4 {
-    font-size: var(--h4-font);
-}
-
-.honors-awards ul {
-    border-left: 1px solid var(--current-line);
-    line-height: 1.6rem;
-    margin-top: 0.4rem;
-    padding-left: 2rem;
-}
-
-.honors-awards ul li {
-    font-size: var(--p-font);
-    list-style-type: circle;
-}
-
-.course-highlights {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.2rem;
-}
-
-.course-highlights h4 {
-    font-size: var(--h4-font);
-}
-
-.course-highlights ul {
-    border-left: 1px solid var(--current-line);
-    column-count: 2;
-    line-height: 1.6rem;
-    margin-top: 0.4rem;
-    padding-left: 2rem;
-}
-
-.course-highlights ul li {
-    font-size: var(--p-font);
-    list-style-type: circle;
-}
-
-.major-projects {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.2rem;
-}
-
-.major-projects h4 {
-    font-size: var(--h4-font);
-}
-
-.major-projects ul {
-    border-left: 1px solid var(--current-line);
-    line-height: 1.6rem;
-    margin-top: 0.4rem;
-    padding-left: 2rem;
-}
-
-.major-projects ul li {
-    font-size: var(--p-font);
-    list-style-type: circle;
-}
-
-.education-img img {
-    border: 10px solid var(--current-line);
-    border-radius: 1rem;
-    height: auto;
-    max-width: 100%;
-    pointer-events: none;
-    width: 860px;
-}
+.education {}
 
 /* |--| Work Experience |----------------------------------------------------| */
 
