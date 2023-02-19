@@ -248,11 +248,9 @@ header {
 
 /* |--| Work Experience |----------------------------------------------------| */
 
-.work-experience {
-    /* text-align: center; */
-}
+.work-experience { }
 
-.work-experience h2 {
+/* .work-experience h2 {
     color: var(--pink);
     font-size: var(--h2-font);
     margin: 1rem 0 2rem;
@@ -344,7 +342,7 @@ header {
     list-style-type: circle;
     margin-bottom: 0.8rem;
     text-indent: -1;
-}
+} */
 
 /* |--| Personal Interests |-------------------------------------------------| */
 
