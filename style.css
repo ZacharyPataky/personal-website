@@ -140,50 +140,6 @@ header {
     margin: 1rem 0 2rem;
 }
 
-.home-btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 550px;
-}
-
-.btn {
-    background: var(--pink);
-    border-radius: 0.5rem;
-    color: var(--foreground);
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-.btn:hover {
-    box-shadow: 0 0 20px var(--purple);
-    transition: 0.4s;
-}
-
-.home-social {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 350px;
-}
-
-.home-social a {
-    align-items: center;
-    background: var(--pink);
-    border-radius: 50%;
-    color: var(--foreground);
-    display: inline-flex;
-    font-size: 1.5rem;
-    height: 40px;
-    justify-content: center;
-    width: 40px;
-}
-
-.home-social a:hover {
-    box-shadow: 0 0 20px var(--purple);
-    transition: 0.4s;
-}
-
 .home-img {
     height: auto;
     max-width: 100%;
@@ -329,7 +285,6 @@ header {
 .job .responsibilities {
     font-size: var(--p-font);
     margin-top: 0.8rem;
-    /* padding: 1rem; */
 }
 
 .job .responsibilities ul {
@@ -350,4 +305,130 @@ header {
 
 /* |--| Contact Me |---------------------------------------------------------| */
 
-.contact-me {}
+.contact-me {
+    align-items: center;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.contact-me-text {
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me-text h2 {
+    color: var(--pink);
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+.contact-me-text p {
+    align-items: center;
+    display: flex;
+    flex-direction: inline;
+    font-size: var(--p-font);
+    margin-top: 1.5rem;
+}
+
+.contact-me-text p:first-of-type {
+    margin-top: 0;
+}
+
+.contact-me-text p i {
+    color: var(--purple);
+    font-size: var(--h3-font);
+    margin-right: 0.8rem;
+}
+
+.contact-me-text p i:hover {
+    text-shadow: 0 0 20px var(--cyan);
+    transition: 0.4s;
+}
+
+.contact-me-social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    width: 25%;
+}
+
+.contact-me-social a {
+    align-items: center;
+    border-radius: 50%;
+    color: var(--foreground);
+    display: inline-flex;
+    font-size: 1.5rem;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+}
+
+.contact-me-social a:hover {
+    box-shadow: 0 0 20px var(--cyan);
+    background: var(--cyan);
+    color: var(--background-color);
+    transition: 0.4s;
+}
+
+.resume-button {
+    background: var(--purple);
+    border: 0;
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    cursor: pointer;
+    display: inline-block;
+    flex-basis: auto;
+    font-size: var(--p-font);
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    text-align: center;
+    width: 250px;
+}
+
+.resume-button:hover {
+    box-shadow: 0 0 20px var(--cyan);
+    background: var(--cyan);
+    color: var(--background-color);
+    transition: 0.4s;
+}
+
+.contact-me form {
+    width: 100%;
+}
+
+.contact-me form input,
+.contact-me form textarea {
+    background: var(--current-line);
+    border: 0;
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    font-size: var(--p-font);
+    margin: 1rem 0;
+    outline: none;
+    padding: 1rem;
+    resize: none;
+    width: 100%;
+}
+
+.form-button {
+    background: var(--purple);
+    border: 0;
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    cursor: pointer;
+    display: inline-block;
+    font-size: var(--p-font);
+    margin: 1rem 0;
+    padding: 1rem 3rem;
+}
+
+.form-button:hover {
+    box-shadow: 0 0 20px var(--cyan);
+    background: var(--cyan);
+    color: var(--background-color);
+    transition: 0.4s;
+}
