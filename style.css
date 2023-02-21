@@ -39,6 +39,10 @@ span::selection {
     background: var(--purple);
 }
 
+img::selection {
+    background: var(--green)
+}
+
 body {
     background: var(--background-color);
     color: var(--foreground);
@@ -162,6 +166,7 @@ header {
     margin: 1rem 0 2rem;
 }
 
+
 .about-text .paragraph-line {
     display: flex;
     flex-direction: row;
@@ -200,7 +205,126 @@ header {
 
 /* |--| Education |----------------------------------------------------------| */
 
-.education {}
+.education {
+    align-items: center;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.education-text h2 {
+    color: var(--pink);
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+.education-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.15rem;
+}
+
+.education-section span {
+    color: --purple;
+}
+
+.education-section .row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.education-section .row span {
+    color: var(--red);
+}
+
+.education-section .row span::selection {
+    background: var(--red);
+}
+
+.education-section h4 {
+    color: var(--green);
+    font-size: var(--h4-font);
+}
+
+.education-section h4::selection {
+    background: var(--green);
+}
+
+#school-info {
+    margin-bottom: 2rem;
+}
+
+#school-info h3 {
+    color: var(--purple);
+    font-size: var(--h3-font);
+}
+
+#school-info h3::selection {
+    background: var(--purple);
+}
+
+#school-info h4 {
+    color: var(--orange);
+    font-size: var(--h4-font);
+}
+
+#school-info h4::selection {
+    background: var(--orange);
+}
+
+#school-info p {
+    font-size: var(--p-font);
+}
+
+.education-section ul {
+    font-size: var(--p-font);
+}
+
+.education-section ul {
+    margin: 1.15rem 0 0 2rem;
+}
+
+#course-highlights ul {
+    column-count: 2;
+}
+
+.education-section ul li {
+    list-style-type: circle;
+    margin-bottom: 1.15rem;
+}
+
+.education-section ul li span {
+    color: var(--red);
+}
+
+.education-section ul li span::selection {
+    background: var(--red);
+}
+
+.education-section {
+    justify-content: end;
+}
+
+.education-img {
+    text-align: center;
+}
+
+.education-img img {
+    /* border: 0.5rem solid var(--current-line); */
+    border-radius: 0.5rem;
+    height: auto;
+    margin-bottom: 1.15rem;
+    max-width: 100%;
+    pointer-events: none;
+    width: 860px;
+}
+
+.education-img #canisius-logo {
+    width: 500px;
+}
 
 /* |--| Work Experience |----------------------------------------------------| */
 
