@@ -1,0 +1,198 @@
+/* |--| Basic Styling |------------------------------------------------------| */
+
+:root {
+    --background-color: #282A36;
+    --current-line: #44475A;
+    --foreground: #F8F8F2;
+    --comment: #6272A4;
+    --cyan: #8BE9FD;
+    --green: #50FA7B;
+    --orange: #FFB86C;
+    --pink: #FF79C6;
+    --purple: #BD93F9;
+    --red: #FF5555;
+    --yellow: #F1FA8C;
+
+    --title-font: 5rem;
+    --sub-title-font: 4rem;
+    --h2-font: 3rem;
+    --h3-font: 2rem;
+    --h4-font: 1.5rem;
+    --p-font: 1.17rem;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inconsolata', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+*::selection {
+    background: var(--yellow);
+    color: var(--background-color);
+}
+
+body {
+    background: var(--background-color);
+    color: var(--foreground);
+}
+
+section {
+    padding: 10px 10%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button {
+    border: 0;
+    background: var(--purple);
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    cursor: pointer;
+    display: block;
+    font-size: var(--p-font);
+    margin: 2rem 0;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    transition: 0.4s;
+    width: fit-content;
+}
+
+.button:hover {
+    background: var(--cyan);
+    color: var(--background-color);
+}
+
+/* |--| Scrollbar |----------------------------------------------------------| */
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: var(--pink);
+    background-clip: content-box;
+}
+
+
+/* |--| Header |-------------------------------------------------------------| */
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 170px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* |--| Navigation Bar |--| */
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--foreground);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    color: var(--cyan);
+    transition: 0.4s;
+}
+
+#menu-icon {
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+}
+
+
+/* |--| Contact Me |---------------------------------------------------------| */
+
+.contact-me-details {
+    flex-basis: 35%;
+}
+
+.contact-me-details h2 {
+    color: var(--pink);
+    font-size: var(--sub-title-font);
+    margin-bottom: 1.5rem;
+}
+
+.contact-me-detail {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.2rem;
+}
+
+.contact-me-detail p {
+    font-size: var(--p-font);
+}
+
+.contact-me-detail i {
+    color: var(--purple);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.contact-me-social {
+    margin-top: 2rem;
+}
+
+.contact-me-social a {
+    color: var(--current-line);
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 0.6rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.contact-me-social a:hover {
+    color: var(--cyan);
+    transform: translateY(-5px);
+}
+
+.contact-me-form {
+    flex-basis: 60%;
+}
+
+.contact-me-form form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    background: var(--current-line);
+    border: 0;
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    font-size: var(--p-font);
+    margin: 1rem 0;
+    outline: none;
+    padding: 1rem;
+    resize: none;
+    width: 100%;
+}
+
+.resume-button {
+    margin-top: 1rem;
+}
