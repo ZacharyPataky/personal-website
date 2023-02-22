@@ -84,13 +84,12 @@ html::-webkit-scrollbar-thumb {
     background-clip: content-box;
 }
 
-
 /* |--| Header |-------------------------------------------------------------| */
 
 header {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 30px 170px;
     position: fixed;
     right: 0;
@@ -99,20 +98,25 @@ header {
     z-index: 1000;
 }
 
-/* |--| Navigation Bar |--| */
-
-.navbar {
-    display: flex;
+.logo {
+    color: var(--foreground);
+    font-size: var(--sub-title-font);
+    font-weight: 700;
 }
 
-.navbar a {
+.logo:hover {
+    color: var(--yellow);
+    transition: 0.4s;
+}
+
+nav a {
     color: var(--foreground);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
     padding: 10px 20px;
 }
 
-.navbar a:hover {
+nav a:hover {
     color: var(--cyan);
     transition: 0.4s;
 }
@@ -122,7 +126,6 @@ header {
     display: none;
     font-size: 2rem;
 }
-
 
 /* |--| Contact Me |---------------------------------------------------------| */
 
