@@ -1,0 +1,4 @@
+Consider trimming some of the styles
+    I can see some of the section headers getting redundant
+    Same with the placeholder photo
+Maybe make sections space-between instead of space-evenly
