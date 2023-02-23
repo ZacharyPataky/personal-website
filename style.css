@@ -15,6 +15,7 @@
 
     --title-font: 5rem;
     --sub-title-font: 4rem;
+    --section-font: 4rem;
     --h2-font: 3rem;
     --h3-font: 2rem;
     --h4-font: 1.5rem;
@@ -42,7 +43,7 @@ body {
 }
 
 section {
-    padding: 10px 10%;
+    padding: 70px 10%;
 }
 
 .row {
@@ -60,7 +61,7 @@ section {
     display: block;
     font-size: var(--p-font);
     margin: 2rem 0;
-    padding: 1rem 3rem;
+    padding: 1rem 3.5rem;
     text-decoration: none;
     transition: 0.4s;
     width: fit-content;
@@ -102,6 +103,7 @@ header {
     color: var(--foreground);
     font-size: var(--sub-title-font);
     font-weight: 700;
+    text-shadow: 1px 1px 2px var(--background-color);
 }
 
 .logo:hover {
@@ -111,9 +113,10 @@ header {
 
 nav a {
     color: var(--foreground);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 500;
     padding: 10px 20px;
+    text-shadow: 1px 1px 2px var(--background-color);
 }
 
 nav a:hover {
@@ -125,6 +128,46 @@ nav a:hover {
     cursor: pointer;
     display: none;
     font-size: 2rem;
+}
+
+/* |--| Home |---------------------------------------------------------------| */
+
+.home {
+    background: center/cover url(images/space.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-text h1 {
+    color: var(--pink);
+    font-size: var(--title-font);
+    text-shadow: 1px 1px 2px var(--background-color);
+}
+
+.home-text h2 {
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+    text-shadow: 1px 1px 2px var(--background-color);
+}
+
+.home-img {
+    align-self: center;
+}
+
+.home img {
+    height: auto;
+    max-width: 100%;
+    pointer-events: none;
+    width: 800px;
 }
 
 /* |--| Contact Me |---------------------------------------------------------| */
