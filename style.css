@@ -133,7 +133,7 @@ nav a:hover {
 /* |--| Home |---------------------------------------------------------------| */
 
 .home {
-    background: center/cover url(images/space.jpg);
+    background: center/cover url(images/home/space.jpg);
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
@@ -228,7 +228,6 @@ nav a:hover {
 .tab-header h2 {
     color: var(--pink);
     font-size: var(--section-font);
-    /* margin: 0 auto 1.5rem; */
 }
 
 .tab-titles {
