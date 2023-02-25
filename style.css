@@ -167,16 +167,15 @@ nav a:hover {
     height: auto;
     max-width: 100%;
     pointer-events: none;
-    width: 800px;
+    width: 600px;
 }
 
 /* |--| About Me |-----------------------------------------------------------| */
 
-
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -213,6 +212,137 @@ nav a:hover {
     color: var(--purple);
 }
 
+/* |--| Work Experience |----------------------------------------------------| */
+
+.work-experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-experience .tab-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tab-header h2 {
+    color: var(--pink);
+    font-size: var(--section-font);
+    /* margin: 0 auto 1.5rem; */
+}
+
+.tab-titles {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.tab-link {
+    color: var(--current-line);
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.tab-link:hover {
+    color: var(--cyan);
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+
+.active-link {
+    color: var(--cyan)
+}
+
+.tab-contents {
+    display: none;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.tab-contents.active-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.company-image {
+    align-self: center;
+}
+
+.company-image img {
+    height: auto;
+    max-width: 100%;
+    pointer-events: none;
+    width: 400px;
+}
+
+.employment-text {
+    width: 60%;
+}
+
+.employment-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.employment-details h3,
+.responsibilities h3 {
+    font-size: var(--h3-font);
+}
+
+.employment-details h4 {
+    font-size: var(--h4-font);
+}
+
+.company-title {
+    color: var(--purple);
+}
+
+.job-title {
+    color: var(--orange);
+    font-style: italic;
+}
+
+.responsibilities {
+    margin-top: 2rem;
+}
+
+.responsibilities > ul {
+    margin-top: 1rem;
+}
+
+.responsibilities ul li {
+    font-size: var(--p-font);
+    line-height: 1.7;
+    list-style: circle;
+    margin: 0.5rem;
+}
+
+.responsibilities ul > ul {
+    margin-left: 2rem;
+}
+
+.responsibilities-highlight {
+    color: var(--purple);
+}
+
+.course-title {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.multiple-role {
+    margin-top: 1.5rem;
+}
 
 /* |--| Contact Me |---------------------------------------------------------| */
 
