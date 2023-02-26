@@ -212,31 +212,37 @@ nav a:hover {
     color: var(--purple);
 }
 
-/* |--| Work Experience |----------------------------------------------------| */
+/* |--| Education |----------------------------------------------------------| */
 
-.work-experience {
+.education {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.side-tab {
+.side-tab-edu {
     display: flex;
     flex-direction: column;
 }
 
-.side-tab h2 {
+.side-tab-edu h2 {
     color: var(--pink);
     font-size: var(--section-font);
     margin-bottom: 1.5rem;
 }
 
-.tab-titles {
+.side-tab-edu h3 {
+    color: var(--purple);
+    font-size: var(--h3-font);
+    margin: 1.5rem 0;
+}
+
+.tab-titles-edu {
     display: flex;
     flex-direction: column;
 }
 
-.tab-link {
+.tab-link-edu {
     background: transparent;
     border: 0;
     color: var(--current-line);
@@ -248,25 +254,110 @@ nav a:hover {
     position: relative;
 }
 
-.tab-link:hover {
+.tab-link-edu:hover {
     color: var(--cyan);
     transform: translateX(5px);
     transition: 0.4s;
 }
 
-.active-link {
+.active-link-edu {
     color: var(--cyan);
 }
 
-.tab-contents {
+.tab-contents-edu {
     display: none;
     /* margin: 1rem auto; */
     width: 60%;
 }
 
-.tab-contents.active-tab {
+.tab-contents-edu.active-tab-edu {
     display: flex;
     flex-direction: column;
+}
+
+.award-topic {
+    margin-bottom: 1rem;
+}
+
+.award-topic-header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.award-topic-header h3 {
+    color: var(--purple);
+    font-size: var(--h3-font);
+}
+
+.award-topic-header h4 {
+    font-size: var(--h4-font);
+}
+
+.award-topic p {
+    color: var(--foreground);
+    font-size: var(--p-font);
+    line-height: 1.7;
+    margin: 1rem 0;
+}
+
+.award-topic p span {
+    color: var(--purple)
+}
+
+.course-topic {
+    margin-bottom: 1rem;
+}
+
+.course-topic h3 {
+    color: var(--purple);
+    font-size: var(--h3-font);
+}
+
+.course-topic ul {
+    color: var(--foreground);
+    column-count: 2;
+    font-size: var(--p-font);
+    line-height: 1.7;
+    margin: 1rem;
+}
+
+.course-topic li {
+    list-style: circle;
+}
+
+.course-reminder {
+    color: var(--orange);
+    font-size: var(--p-font);
+    font-weight: 700;
+}
+
+.major-project {
+    margin-bottom: 1rem;
+}
+
+.major-project h3 {
+    color: var(--purple);
+    font-size: var(--h3-font);
+}
+
+.major-project p {
+    font-size: var(--p-font);
+    line-height: 1.7;
+    margin: 1rem 0;
+}
+
+.major-project p span {
+    color: var(--purple);
+}
+
+/* |--| Work Experience |----------------------------------------------------| */
+
+.work-experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .employment-details {
@@ -275,6 +366,55 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 1rem;
+}
+
+.side-tab-we {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-tab-we h2 {
+    color: var(--pink);
+    font-size: var(--section-font);
+    margin-bottom: 1.5rem;
+}
+
+.tab-titles-we {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-link-we {
+    background: transparent;
+    border: 0;
+    color: var(--current-line);
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.tab-link-we:hover {
+    color: var(--cyan);
+    transform: translateX(5px);
+    transition: 0.4s;
+}
+
+.active-link-we {
+    color: var(--cyan);
+}
+
+.tab-contents-we {
+    display: none;
+    /* margin: 1rem auto; */
+    width: 60%;
+}
+
+.tab-contents-we.active-tab-we {
+    display: flex;
+    flex-direction: column;
 }
 
 .employment-details h3,
@@ -314,11 +454,11 @@ nav a:hover {
     margin-left: 2rem;
 }
 
-.responsibilities-highlight {
+.responsibilities span {
     color: var(--purple);
 }
 
-.course-title {
+.responsibilities span.course-title {
     color: var(--orange);
     font-weight: 700;
 }

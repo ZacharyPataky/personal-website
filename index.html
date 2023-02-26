@@ -77,22 +77,108 @@
 
     <!-- Education -->
     <section class="education" id="education">
-        <h2>Education</h2>
+        <div class="side-tab-edu">
+            <h2>Education</h2>
+            <h3>Canisius College</h3>
+            <div class="tab-titles-edu">
+                <p class="tab-link-edu active-link-edu" onclick="openTab_edu('degree-details')">Degree Details</p>
+                <p class="tab-link-edu" onclick="openTab_edu('activities')">Activities</p>
+                <p class="tab-link-edu" onclick="openTab_edu('honors-awards')">Honors and Awards</p>
+                <p class="tab-link-edu" onclick="openTab_edu('course-highlights')">Course Highlights</p>
+                <p class="tab-link-edu" onclick="openTab_edu('major-projects')">Major Projects</p>
+            </div>
+        </div>
+        <div class="tab-contents-edu active-tab-edu" id="degree-details">
+        </div>
+        <div class="tab-contents-edu" id="activities">
+            
+        </div>
+        <div class="tab-contents-edu" id="honors-awards">
+            <div class="award-topic">
+                <div class="award-topic-header">
+                    <h3>Deans List</h3>
+                    <h4>Fall 2018</h4>
+                </div>
+                <p>Awarded to students who have attained a <span>grade point average</span> of at least <span>3.50</span> for the semester and have completed at least four courses of three credits or equivalent.</p>
+            </div>
+            <div class="award-topic">
+                <div class="award-topic-header">
+                    <h3>Deans List with Distinction</h3>
+                    <h4>Spring 2019 - Spring 2022</h4>
+                </div>
+                <p>Awarded to students who have attained a <span>grade point average</span> of <span>4.00</span> for the semester and have completed at least four courses of three credits or equivalent.</p>
+            </div>
+            <div class="award-topic">
+                <div class="award-topic-header">
+                    <h3>Computer Science Excellence in Academics Award</h3>
+                    <h4>May 2022</h4>
+                </div>
+                <p>Presented to graduating <span>computer science majors</span> who have achieved an <span>outstanding academic performance</span>.</p>
+            </div>
+        </div>
+        <div class="tab-contents-edu" id="course-highlights">
+            <div class="course-topic">
+                <h3>Computer Science Highlights</h3>
+                <ul>
+                    <li>Data Structures</li>
+                    <li>Computer Hardware</li>
+                    <li>Discrete Mathematics</li>
+                    <li>Automata and Algorithms</li>
+                    <li>Software Engineering</li>
+                    <li>Operating System Design and Distributed Computing</li>
+                    <li>Intelligent Systems</li>
+                    <li>Comparative Programming Languages</li>
+                    <li>Information Organization and Processing</li>
+                    <li>The Social Impact of Computing</li>
+                    <li>Intro to Web Development</li>
+                    <li>Cybersecurity Principles</li>
+                </ul>
+            </div>
+            <div class="course-topic">
+                <h3>Other Highlights</h3>
+                <ul>
+                    <li>Intro to Army and Critical Thinking</li>
+                    <li>Foundations of Leadership</li>
+                    <li>Introduction to Management</li>
+                    <li>Ethics</li>
+                    <li>Philosophy of Law</li>
+                    <li>Cyber Policies, Ethics, and Law</li>
+                </ul>
+            </div>
+            <p class="course-reminder">Click a course to read its Canisius Catalog description! </p>
+        </div>
+        <div class="tab-contents-edu" id="major-projects">
+            <div class="major-project">
+                <h3>Distributed Computing Exercise</h3>
+                <p>Created a <span>distributed information processing and querying system</span> capable of handling large quantities of data by leveraging the <span>MPI library</span>.</p>
+                <p>Developed in <span>C++</span>.</p>
+            </div>
+            <div class="major-project">
+                <h3>Color-Ona</h3>
+                <p>Operated as <span>Project Manager and programmer</span> for a semester-long project <span>creating a video game</span>.</p>
+                <p>Developed in <span>Java</span> using the <span>LibGDX library</span>.</p>
+            </div>
+            <div class="major-project">
+                <h3>Resume Website</h3>
+                <p>Produced a <span>personal resume website</span> as the capstone project of my Web Development class.</p>
+                <p>Developed in <span>HTML, CSS, Javascript,</span> and <span>PHP</span>.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Work Experience -->
     <section class="work-experience" id="work-experience">
-        <div class="side-tab">
+        <div class="side-tab-we">
             <h2>Work Experience</h2>
-            <div class="tab-titles">
-                <p class="tab-link active-link" onclick="openTab('cybra-corporation')">CYBRA Corporation</p>
-                <p class="tab-link" onclick="openTab('canisius-college-qsd')">Canisius College, QSD</p>
-                <p class="tab-link" onclick="openTab('buffalo-computer-graphics')">Buffalo Computer Graphics</p>
-                <p class="tab-link" onclick="openTab('canisius-college-ngo')">Canisius College, NGO</p>
-                <p class="tab-link" onclick="openTab('consumers-beverages')">Consumer's Beverages</p>
+            <div class="tab-titles-we">
+                <p class="tab-link-we active-link-we" onclick="openTab_we('cybra-corporation')">CYBRA Corporation</p>
+                <p class="tab-link-we" onclick="openTab_we('canisius-college-qsd')">Canisius College, QSD</p>
+                <p class="tab-link-we" onclick="openTab_we('buffalo-computer-graphics')">Buffalo Computer Graphics</p>
+                <p class="tab-link-we" onclick="openTab_we('canisius-college-ngo')">Canisius College, NGO</p>
+                <p class="tab-link-we" onclick="openTab_we('consumers-beverages')">Consumer's Beverages</p>
             </div>
         </div>
-        <div class="tab-contents active-tab" id="cybra-corporation">
+        <div class="tab-contents-we active-tab-we" id="cybra-corporation">
             <div class="employment-details">
                 <h3 class="company-title">CYBRA Corporation</h3>
                 <h3>West Seneca, NY</h3>
@@ -104,16 +190,16 @@
             <div class="responsibilities">
                 <h3>Responsibilities</h3>
                 <ul>
-                    <li>Participated as an active teammate in <span class="responsibilities-highlight">daily scrum meetings</span>, sharing my work and <span class="responsibilities-highlight">providing constructive criticism</span></li>
-                    <li>Performed <span class="responsibilities-highlight">debugging on current and legacy software</span> to support long-term customers</li>
-                    <li>Collaborated closely with other team members to <span class="responsibilities-highlight">plan, design, and execute robust solutions</span> for assigned tasks</li>
-                    <li>Contributed to the development of premier web-based products using <span class="responsibilities-highlight">Angular 14</span> and <span class="responsibilities-highlight">Java Web Services</span></li>
-                    <li><span class="responsibilities-highlight">Started developing critical components</span> of upcoming software <span class="responsibilities-highlight">three weeks into my employment</span></li>
-                    <li><span class="responsibilities-highlight">Helped implement activities</span> to improve the office culture and <span class="responsibilities-highlight">build team camaraderie</span></li>
+                    <li>Participated as an active teammate in <span>daily scrum meetings</span>, sharing my work and <span>providing constructive criticism</span></li>
+                    <li>Performed <span>debugging on current and legacy software</span> to support long-term customers</li>
+                    <li>Collaborated closely with other team members to <span>plan, design, and execute robust solutions</span> for assigned tasks</li>
+                    <li>Contributed to the development of premier web-based products using <span>Angular 14</span> and <span>Java Web Services</span></li>
+                    <li><span>Started developing critical components</span> of upcoming software <span>three weeks into my employment</span></li>
+                    <li><span>Helped implement activities</span> to improve the office culture and <span>build team camaraderie</span></li>
                 </ul>
             </div>
         </div>
-        <div class="tab-contents" id="canisius-college-qsd">
+        <div class="tab-contents-we" id="canisius-college-qsd">
             <div class="employment-details">
                 <h3 class="company-title">Canisius College, Quantitative Studies Department</h3>
                 <h3>Buffalo, NY</h3>
@@ -125,35 +211,35 @@
             <div class="responsibilities">
                 <h3>Responsibilities</h3>
                 <ul>
-                    <li><span class="responsibilities-highlight">Assisted students</span> with understanding class materials in <span class="responsibilities-highlight">face-to-face and online mediums</span></li>
-                    <li><span class="responsibilities-highlight">Managed the Computer Science department’s tutoring program</span> by creating the tutoring schedule and operating as a source of support and assistance for emerging issues </li>
-                    <li>Represented the Computer Science department as a <span class="responsibilities-highlight">student panelist</span></li>
+                    <li><span>Assisted students</span> with understanding class materials in <span>face-to-face and online mediums</span></li>
+                    <li><span>Managed the Computer Science department’s tutoring program</span> by creating the tutoring schedule and operating as a source of support and assistance for emerging issues </li>
+                    <li>Represented the Computer Science department as a <span>student panelist</span></li>
                     <li><span class="course-title">Cybersecurity Principles</span> (CYB 500) | Spring 2022</li>
                         <ul>
-                            <li>Suppored laboratory sessions with <span class="responsibilities-highlight">class-wide and one-on-one assistance</span></li>
-                            <li>Directed the class through laboratory assignments, including the <span class="responsibilities-highlight">Social Engineering Toolkit</span>, <span class="responsibilities-highlight">Steganography</span>, <span class="responsibilities-highlight">Password Cracking</span>, <span class="responsibilities-highlight">Wireshark</span>, and <span class="responsibilities-highlight">Heartbleed Attack</span> projects</li>
+                            <li>Suppored laboratory sessions with <span>class-wide and one-on-one assistance</span></li>
+                            <li>Directed the class through laboratory assignments, including the <span>Social Engineering Toolkit</span>, <span>Steganography</span>, <span>Password Cracking</span>, <span>Wireshark</span>, and <span>Heartbleed Attack</span> projects</li>
                         </ul>
                     <li><span class="course-title">Information Organization and Processing</span> (CSC 310) | Spring 2022</li>
                         <ul>
-                            <li><span class="responsibilities-highlight">Managed a group</span> of three students in a semester-long MySQL database project as their <span class="responsibilities-highlight">Project Lead</span></li>
+                            <li><span>Managed a group</span> of three students in a semester-long MySQL database project as their <span>Project Lead</span></li>
                         </ul>
                     <li><span class="course-title">Distributed Computing and Operating System Design</span> (CSC 330) | Fall 2021</li>
                         <ul>
-                            <li><span class="responsibilities-highlight">Graded exams</span> using a D2L rubric system, returning with <span class="responsibilities-highlight">feedback for improved resubmissions</span></li>
+                            <li><span>Graded exams</span> using a D2L rubric system, returning with <span>feedback for improved resubmissions</span></li>
                         </ul>
                     <li><span class="course-title">Large-Scale Programming</span> (CSC 213) Fall 2021</li>
                         <ul>
-                            <li><span class="responsibilities-highlight">Created and graded class materials</span>, including the first exam, homework assignments, and lecture material</li>
-                            <li><span class="responsibilities-highlight">Designed lectures</span> and <span class="responsibilities-highlight">presented</span> on Java, Object-Oriented Programming, and Data Structures</li>
+                            <li><span>Created and graded class materials</span>, including the first exam, homework assignments, and lecture material</li>
+                            <li><span>Designed lectures</span> and <span>presented</span> on Java, Object-Oriented Programming, and Data Structures</li>
                         </ul>
                     <li><span class="course-title">Automata and Algorithms</span> (CSC 281) | Spring 2021</li>
                     <ul>
-                        <li><span class="responsibilities-highlight">Graded homework and laboratory assignments</span> using a D2L rubric system, returning them with hints and concerns for <span class="responsibilities-highlight">improved resubmissions</span></li>
+                        <li><span>Graded homework and laboratory assignments</span> using a D2L rubric system, returning them with hints and concerns for <span>improved resubmissions</span></li>
                     </ul>
                 </ul>
             </div>
         </div>
-        <div class="tab-contents" id="buffalo-computer-graphics">
+        <div class="tab-contents-we" id="buffalo-computer-graphics">
             <div class="employment-details">
                 <h3 class="company-title">Buffalo Computer Graphics</h3>
                 <h3>Blasdell, NY</h3>
@@ -165,14 +251,14 @@
             <div class="responsibilities">
                 <h3>Responsibilities</h3>
                 <ul>
-                    <li><span class="responsibilities-highlight">Created and executed automated tests</span> for the DisasterLAN program using <span class="responsibilities-highlight">Robot Framework</span></li>
-                    <li><span class="responsibilities-highlight">Modified existing documents</span> in Microsoft Word to conform to and meet <span class="responsibilities-highlight">ISO requirements</span></li>
-                    <li><span class="responsibilities-highlight">Wrote technical documentation</span> for an in-house browser extension tool</li>
-                    <li><span class="responsibilities-highlight">Developed a tool</span> in Robot Framework to <span class="responsibilities-highlight">generalize our testing object library</span></li>
+                    <li><span>Created and executed automated tests</span> for the DisasterLAN program using <span>Robot Framework</span></li>
+                    <li><span>Modified existing documents</span> in Microsoft Word to conform to and meet <span>ISO requirements</span></li>
+                    <li><span>Wrote technical documentation</span> for an in-house browser extension tool</li>
+                    <li><span>Developed a tool</span> in Robot Framework to <span>generalize our testing object library</span></li>
                 </ul>
             </div>
         </div>
-        <div class="tab-contents" id="canisius-college-ngo">
+        <div class="tab-contents-we" id="canisius-college-ngo">
             <div class="employment-details">
                 <h3 class="company-title">Canisius College, New Griff Orientation</h3>
                 <h3>Buffalo, NY</h3>
@@ -184,13 +270,13 @@
             <div class="responsibilities">
                 <h3>Responsibilities</h3>
                 <ul>
-                    <li><span class="responsibilities-highlight">Served as a leader of academic and campus information</span> for incoming first-year students and orientation leaders</li>
-                    <li><span class="responsibilities-highlight">Conducted meetings and presentations</span> for transfer students and Computer Science major students</li>
-                    <li><span class="responsibilities-highlight">Created content weekly</span> for the New Student Orientation Instagram account</li>
-                    <li><span class="responsibilities-highlight">Composed sections for the Orientation Leader Manual</span>, including a guide on how to operate classroom computer equipment, NSO contact sheets, and campus resources</li>
-                    <li><span class="responsibilities-highlight">Directed two New Student Orientation videos</span>, including a welcome video for the organization’s Instagram page and a tutorial video for online resources</li>
-                    <li>Designed and executed a campus scavenger hunt that <span class="responsibilities-highlight">operated beyond expectations</span></li>
-                    <li><span class="responsibilities-highlight">Assisted a local party event company</span> in cleaning up the campus</li>
+                    <li><span>Served as a leader of academic and campus information</span> for incoming first-year students and orientation leaders</li>
+                    <li><span>Conducted meetings and presentations</span> for transfer students and Computer Science major students</li>
+                    <li><span>Created content weekly</span> for the New Student Orientation Instagram account</li>
+                    <li><span>Composed sections for the Orientation Leader Manual</span>, including a guide on how to operate classroom computer equipment, NSO contact sheets, and campus resources</li>
+                    <li><span>Directed two New Student Orientation videos</span>, including a welcome video for the organization’s Instagram page and a tutorial video for online resources</li>
+                    <li>Designed and executed a campus scavenger hunt that <span>operated beyond expectations</span></li>
+                    <li><span>Assisted a local party event company</span> in cleaning up the campus</li>
                 </ul>
             </div>
             <div class="employment-details">
@@ -200,12 +286,12 @@
             <div class="responsibilities">
                 <h3>Responsibilities</h3>
                 <ul>
-                    <li>Assisted New Griff Orientation in <span class="responsibilities-highlight">welcoming Canisius College’s class of 2023</span></li>
-                    <li>Collaborated with a partner to <span class="responsibilities-highlight">direct a student group through social and learning opportunities</span></li>
+                    <li>Assisted New Griff Orientation in <span>welcoming Canisius College’s class of 2023</span></li>
+                    <li>Collaborated with a partner to <span>direct a student group through social and learning opportunities</span></li>
                 </ul>
             </div>
         </div>
-        <div class="tab-contents" id="consumers-beverages">
+        <div class="tab-contents-we" id="consumers-beverages">
             <div class="employment-details">
                 <h3 class="company-title">Consumer's Beverages</h3>
                 <h3>Orchard Park, NY</h3>
@@ -217,185 +303,14 @@
             <div class="responsibilities">
                 <h3>Responsibilities</h3>
                 <ul>
-                    <li><span class="responsibilities-highlight">Processed cash and credit transactions</span>, tendering correct change to patrons</li>
-                    <li><span class="responsibilities-highlight">Stocked shelves and ice bins</span>, <span class="responsibilities-highlight">calculated returnable containers</span>, and <span class="responsibilities-highlight">tapped kegs</span> to the satisfaction of customers and at the standards set by Consumer’s Beverages</li>
-                    <li><span class="responsibilities-highlight">Resolved customer concerns</span> positively and professionally to ensure recurring business</li>
-                    <li><span class="responsibilities-highlight">Maintained a clean environment</span> for patrons and fellow employees</li>
+                    <li><span>Processed cash and credit transactions</span>, tendering correct change to patrons</li>
+                    <li><span>Stocked shelves and ice bins</span>, <span>calculated returnable containers</span>, and <span>tapped kegs</span> to the satisfaction of customers and at the standards set by Consumer’s Beverages</li>
+                    <li><span>Resolved customer concerns</span> positively and professionally to ensure recurring business</li>
+                    <li><span>Maintained a clean environment</span> for patrons and fellow employees</li>
                 </ul>
             </div>
         </div>
     </section>
-
-    <!-- Work Experience -->
-    <!-- <section class="work-experience" id="work-experience">
-        <div class="tab-header">
-            <h2>Work Experience</h2>
-            <div class="tab-titles">
-                <p class="tab-link active-link" onclick="openTab('cybra-corporation')">CYBRA Corporation</p>
-                <p class="tab-link" onclick="openTab('canisius-college-qsd')">Canisius College, QSD</p>
-                <p class="tab-link" onclick="openTab('buffalo-computer-graphics')">Buffalo Computer Graphics</p>
-                <p class="tab-link" onclick="openTab('canisius-college-ngo')">Canisius College, NGO</p>
-                <p class="tab-link" onclick="openTab('consumers-beverages')">Consumer's Beverages</p>
-            </div>
-        </div>
-        <div class="tab-contents active-tab" id="cybra-corporation">
-            <div class="company-image">
-                <img src="images/home/static-moon-no-background.png" alt="placeholder-photo">
-            </div>
-            <div class="employment-text">
-                <div class="employment-details">
-                    <h3 class="company-title">CYBRA Corporation</h3>
-                    <h3>West Seneca, NY</h3>
-                </div>
-                <div class="employment-details">
-                    <h4 class="job-title">Junior Software Engineer (Full-Stack Developer)</h4>
-                    <h4>July 2022 - Present</h4>
-                </div>
-                <div class="responsibilities">
-                    <h3>Responsibilities</h3>
-                    <ul>
-                        <li>Participated as an active teammate in <span class="responsibilities-highlight">daily scrum meetings</span>, sharing my work and <span class="responsibilities-highlight">providing constructive criticism</span></li>
-                        <li>Performed <span class="responsibilities-highlight">debugging on current and legacy software</span> to support long-term customers</li>
-                        <li>Collaborated closely with other team members to <span class="responsibilities-highlight">plan, design, and execute robust solutions</span> for assigned tasks</li>
-                        <li>Contributed to the development of premier web-based products using <span class="responsibilities-highlight">Angular 14</span> and <span class="responsibilities-highlight">Java Web Services</span></li>
-                        <li><span class="responsibilities-highlight">Started developing critical components</span> of upcoming software <span class="responsibilities-highlight">three weeks into my employment</span></li>
-                        <li><span class="responsibilities-highlight">Helped implement activities</span> to improve the office culture and <span class="responsibilities-highlight">build team camaraderie</span></li>
-                    </ul>
-                </div>
-            </div> 
-        </div>
-        <div class="tab-contents" id="canisius-college-qsd">
-            <div class="company-image">
-                <img src="images/home/static-moon-no-background.png" alt="placeholder-photo">
-            </div>
-            <div class="employment-text">
-                <div class="employment-details">
-                    <h3 class="company-title">Canisius College, Quantitative Studies Department</h3>
-                    <h3>Buffalo, NY</h3>
-                </div>
-                <div class="employment-details">
-                    <h4 class="job-title">Department Tutor and Teacher's Assistant</h4>
-                    <h4>February 2021 - May 2022</h4>
-                </div>
-                <div class="responsibilities">
-                    <h3>Responsibilities</h3>
-                    <ul>
-                        <li><span class="responsibilities-highlight">Assisted students</span> with understanding class materials in <span class="responsibilities-highlight">face-to-face and online mediums</span></li>
-                        <li><span class="responsibilities-highlight">Managed the Computer Science department’s tutoring program</span> by creating the tutoring schedule and operating as a source of support and assistance for emerging issues </li>
-                        <li>Represented the Computer Science department as a <span class="responsibilities-highlight">student panelist</span></li>
-                        <li><span class="course-title">Cybersecurity Principles</span> (CYB 500) | Spring 2022</li>
-                            <ul>
-                                <li>Suppored laboratory sessions with <span class="responsibilities-highlight">class-wide and one-on-one assistance</span></li>
-                                <li>Directed the class through laboratory assignments, including the <span class="responsibilities-highlight">Social Engineering Toolkit</span>, <span class="responsibilities-highlight">Steganography</span>, <span class="responsibilities-highlight">Password Cracking</span>, <span class="responsibilities-highlight">Wireshark</span>, and <span class="responsibilities-highlight">Heartbleed Attack</span> projects</li>
-                            </ul>
-                        <li><span class="course-title">Information Organization and Processing</span> (CSC 310) | Spring 2022</li>
-                            <ul>
-                                <li><span class="responsibilities-highlight">Managed a group</span> of three students in a semester-long MySQL database project as their <span class="responsibilities-highlight">Project Lead</span></li>
-                            </ul>
-                        <li><span class="course-title">Distributed Computing and Operating System Design</span> (CSC 330) | Fall 2021</li>
-                            <ul>
-                                <li><span class="responsibilities-highlight">Graded exams</span> using a D2L rubric system, returning with <span class="responsibilities-highlight">feedback for improved resubmissions</span></li>
-                            </ul>
-                        <li><span class="course-title">Large-Scale Programming</span> (CSC 213) Fall 2021</li>
-                            <ul>
-                                <li><span class="responsibilities-highlight">Created and graded class materials</span>, including the first exam, homework assignments, and lecture material</li>
-                                <li><span class="responsibilities-highlight">Designed lectures</span> and <span class="responsibilities-highlight">presented</span> on Java, Object-Oriented Programming, and Data Structures</li>
-                            </ul>
-                        <li><span class="course-title">Automata and Algorithms</span> (CSC 281) | Spring 2021</li>
-                        <ul>
-                            <li><span class="responsibilities-highlight">Graded homework and laboratory assignments</span> using a D2L rubric system, returning them with hints and concerns for <span class="responsibilities-highlight">improved resubmissions</span></li>
-                        </ul>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="tab-contents" id="buffalo-computer-graphics">
-            <div class="company-image">
-                <img src="images/home/static-moon-no-background.png" alt="placeholder-photo">
-            </div>
-            <div class="employment-text">
-                <div class="employment-details">
-                    <h3 class="company-title">Buffalo Computer Graphics</h3>
-                    <h3>Blasdell, NY</h3>
-                </div>
-                <div class="employment-details">
-                    <h4 class="job-title">Automated Testing Intern</h4>
-                    <h4>May 2021 - August 2021, January 2022</h4>
-                </div>
-                <div class="responsibilities">
-                    <h3>Responsibilities</h3>
-                    <ul>
-                        <li><span class="responsibilities-highlight">Created and executed automated tests</span> for the DisasterLAN program using <span class="responsibilities-highlight">Robot Framework</span></li>
-                        <li><span class="responsibilities-highlight">Modified existing documents</span> in Microsoft Word to conform to and meet <span class="responsibilities-highlight">ISO requirements</span></li>
-                        <li><span class="responsibilities-highlight">Wrote technical documentation</span> for an in-house browser extension tool</li>
-                        <li><span class="responsibilities-highlight">Developed a tool</span> in Robot Framework to <span class="responsibilities-highlight">generalize our testing object library</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="tab-contents" id="canisius-college-ngo">
-            <div class="company-image">
-                <img src="images/home/static-moon-no-background.png" alt="placeholder-photo">
-            </div>
-            <div class="employment-text">
-                <div class="employment-details">
-                    <h3 class="company-title">Canisius College, New Griff Orientation</h3>
-                    <h3>Buffalo, NY</h3>
-                </div>
-                <div class="employment-details">
-                    <h4 class="job-title">Lead Orientation Leader</h4>
-                    <h4>June 2020 - August 2020</h4>
-                </div>
-                <div class="responsibilities">
-                    <h3>Responsibilities</h3>
-                    <ul>
-                        <li><span class="responsibilities-highlight">Served as a leader of academic and campus information</span> for incoming first-year students and orientation leaders</li>
-                        <li><span class="responsibilities-highlight">Conducted meetings and presentations</span> for transfer students and Computer Science major students</li>
-                        <li><span class="responsibilities-highlight">Created content weekly</span> for the New Student Orientation Instagram account</li>
-                        <li><span class="responsibilities-highlight">Composed sections for the Orientation Leader Manual</span>, including a guide on how to operate classroom computer equipment, NSO contact sheets, and campus resources</li>
-                        <li><span class="responsibilities-highlight">Directed two New Student Orientation videos</span>, including a welcome video for the organization’s Instagram page and a tutorial video for online resources</li>
-                        <li>Designed and executed a campus scavenger hunt that <span class="responsibilities-highlight">operated beyond expectations</span></li>
-                        <li><span class="responsibilities-highlight">Assisted a local party event company</span> in cleaning up the campus</li>
-                    </ul>
-                </div>
-                <div class="employment-details">
-                    <h4 class="job-title multiple-role">Orientation Leader</h4>
-                    <h4>August 2019</h4>
-                </div>
-                <div class="responsibilities">
-                    <h3>Responsibilities</h3>
-                    <ul>
-                        <li>Assisted New Griff Orientation in <span class="responsibilities-highlight">welcoming Canisius College’s class of 2023</span></li>
-                        <li>Collaborated with a partner to <span class="responsibilities-highlight">direct a student group through social and learning opportunities</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="tab-contents" id="consumers-beverages">
-            <div class="company-image">
-                <img src="images/home/static-moon-no-background.png" alt="placeholder-photo">
-            </div>
-            <div class="employment-text">
-                <div class="employment-details">
-                    <h3 class="company-title">Consumer's Beverages</h3>
-                    <h3>Orchard Park, NY</h3>
-                </div>
-                <div class="employment-details">
-                    <h4 class="job-title">Store Clerk</h4>
-                    <h4>May 2019 - July 2019</h4>
-                </div>
-                <div class="responsibilities">
-                    <h3>Responsibilities</h3>
-                    <ul>
-                        <li><span class="responsibilities-highlight">Processed cash and credit transactions</span>, tendering correct change to patrons</li>
-                        <li><span class="responsibilities-highlight">Stocked shelves and ice bins</span>, <span class="responsibilities-highlight">calculated returnable containers</span>, and <span class="responsibilities-highlight">tapped kegs</span> to the satisfaction of customers and at the standards set by Consumer’s Beverages</li>
-                        <li><span class="responsibilities-highlight">Resolved customer concerns</span> positively and professionally to ensure recurring business</li>
-                        <li><span class="responsibilities-highlight">Maintained a clean environment</span> for patrons and fellow employees</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Personal Interests -->
     <section class="personal-interests" id="personal-interests">
