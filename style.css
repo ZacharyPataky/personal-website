@@ -445,6 +445,7 @@ nav a:hover {
 .course-reminder a {
     color: var(--purple);
     font-size: var(--p-font);
+    text-decoration: none;
 }
 
 .course-reminder a:hover {
