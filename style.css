@@ -442,6 +442,16 @@ nav a:hover {
     font-weight: 700;
 }
 
+.course-reminder a {
+    color: var(--purple);
+    font-size: var(--p-font);
+}
+
+.course-reminder a:hover {
+    color: var(--cyan);
+    transition: 0.4s;
+}
+
 .major-project {
     margin-bottom: 1rem;
 }
