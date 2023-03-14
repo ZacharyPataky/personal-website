@@ -1,8 +1,0 @@
-Consider trimming some of the styles
-    I can see some of the section headers getting redundant
-    Same with the placeholder photo
-Maybe make sections space-between instead of space-evenly
-Make the course highlights direct users to the Canisius Catalog
-Add a few photo/quote bars or something to make the page interesting
-    Especially to not make education/work-exp too repetitive with the tabs
-    Hell, maybe even flip Work-Exp's sides so the header and tabs are on the right
