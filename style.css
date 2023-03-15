@@ -662,10 +662,6 @@ form textarea {
 
 /* Breakpoint (Horizontal iPad): 1024px */
 @media only screen and (max-width: 1200px) {
-    .about-me-text {
-        text-align: center;
-    }
-    
     .photo-bar img {
         width: 240px;
     }
