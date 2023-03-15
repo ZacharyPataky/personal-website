@@ -122,6 +122,7 @@ nav a:hover {
     flex-direction: column;
     height: auto;
     padding: 2rem;
+    text-align: center;
     width: 100%;
 }
 
@@ -750,5 +751,25 @@ form textarea {
 
     .degree-details .school-info {
         margin-top: 1.5rem;
+    }
+}
+
+/* Breakpoint (Narrower Phones): 400px */
+@media only screen and (max-width: 400px) {
+    .photo-bar img {
+        width: 300px;
+    }
+
+    .edu-select .tab-titles-edu {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .education-opportunity .degree-details img {
+        width: 275px;;
+    }
+
+    .job .employment-details img {
+        width: 275px;
     }
 }
