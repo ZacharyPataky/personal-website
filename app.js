@@ -16,7 +16,23 @@ function openTab_edu(tabName) {
 
 // Reset the "Contact Me" form
 window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      form.reset();
+    for (const form of document.getElementsByTagName('form')) {
+        form.reset();
     }
-  }
+}
+
+// Toggle navigation menu
+let navMenu = document.getElementById('mobile-nav-menu');
+let menuButton = document.getElementById('open-menu');
+let closeButton = document.getElementById('close-menu');
+let header = document.getElementById('header');
+
+function openMenu() {
+    menuButton.style.display = 'none';
+    navMenu.style.display = 'flex';
+}
+
+function closeMenu() {
+    menuButton.style.display = 'block'
+    navMenu.style.display = 'none';
+}

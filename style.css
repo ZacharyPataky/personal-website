@@ -1,3 +1,5 @@
+/* Breakpoint (Large Display): 1920x1080 */
+
 /* |--| Basic Styling |------------------------------------------------------| */
 
 :root {
@@ -112,54 +114,31 @@ nav a:hover {
     transition: 0.4s;
 }
 
-#menu-icon {
-    cursor: pointer;
-    display: none;
-    font-size: 2rem;
-}
-
-/* header {
+#mobile-nav-menu {
     align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 170px;
-    position: fixed;
-    right: 0;
-    top: 0;
+    background-color: rgba(40, 36, 54, 0.9);
+    border-radius: 0.5rem;
+    display: none;
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
     width: 100%;
-    z-index: 1000;
 }
 
-.logo {
-    color: var(--foreground);
-    font-size: var(--sub-title-font);
-    font-weight: 700;
-    text-shadow: 1px 1px 2px var(--background-color);
+#close-menu {
+    align-self: end;
+    font-size: var(--h2-font);
 }
 
-.logo:hover {
-    color: var(--yellow);
-    transition: 0.4s;
+#mobile-nav-menu a {
+    font-size: var(--h2-font);
 }
 
-nav a {
-    color: var(--foreground);
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding: 10px 20px;
-    text-shadow: 1px 1px 2px var(--background-color);
-}
-
-nav a:hover {
-    color: var(--cyan);
-    transition: 0.4s;
-}
-
-#menu-icon {
+#open-menu {
     cursor: pointer;
     display: none;
     font-size: 2rem;
-} */
+}
 
 /* |--| Home |---------------------------------------------------------------| */
 
@@ -189,6 +168,11 @@ nav a:hover {
 .home-text h2 {
     font-size: var(--h2-font);
     margin: 1rem 0 2rem;
+}
+
+#header-arrow {
+    color: var(--foreground);
+    font-size: var(--h2-font);
 }
 
 /* |--| About Me |-----------------------------------------------------------| */
@@ -230,6 +214,8 @@ nav a:hover {
 
 .photo-bar {
     background: var(--current-line);
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -284,10 +270,6 @@ nav a:hover {
     font-size: var(--h4-font);
     margin-top: 1rem;
 }
-
-/* .education-opportunity .degree-details .degree-info {
-    margin-top: 1.5rem;
-} */
 
 .education-opportunity .degree-details .degree-info h4 span {
     color: var(--orange)
@@ -345,7 +327,7 @@ nav a:hover {
     flex-direction: column;
 }
 
-.tab-contents-edu > p {
+.tab-contents-edu>p {
     color: var(--orange);
     font-size: var(--p-font);
     font-weight: 700;
@@ -366,7 +348,7 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.section-topic > h3 {
+.section-topic>h3 {
     color: var(--purple);
     font-size: var(--h3-font);
 }
@@ -408,13 +390,6 @@ nav a:hover {
 
 .section-topic p span {
     color: var(--purple);
-}
-
-/* |--| Quote Bar |----------------------------------------------------------| */
-
-.quote-bar {
-    background: var(--current-line);
-    width: 100%;
 }
 
 /* |--| Work Experience |----------------------------------------------------| */
@@ -501,7 +476,7 @@ nav a:hover {
     margin: 0.5rem;
 }
 
-.responsibilities ul > ul {
+.responsibilities ul>ul {
     margin-left: 2rem;
 }
 
@@ -589,4 +564,191 @@ form textarea {
 
 .resume-button {
     margin-top: 1rem;
+}
+
+/* Breakpoint (Large Devices): 1200px */
+@media only screen and (max-width: 1200px) {
+    :root {
+        --title-font: 4rem;
+        --sub-title-font: 3rem;
+        --section-font: 4rem;
+        --h2-font: 2.75rem;
+        --h3-font: 1.75rem;
+        --h4-font: 1.5rem;
+        --p-font: 1.17rem;
+    }
+
+    .section {
+        justify-content: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .about-me-text {
+        flex-basis: auto;
+    }
+
+    .about-me-image img {
+        width: 480px;
+    }
+
+    .photo-bar img {
+        width: 280px;
+    }
+
+    .education-opportunity {
+        flex-direction: column;
+    }
+
+    .degree-details {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .education-opportunity .degree-details h3 {
+        margin: 0;
+    }
+
+    .education-opportunity .degree-details .line {
+        margin: 1.5rem 0;
+    }
+
+    .tab-titles-edu {
+        margin-top: 2rem;
+    }
+
+    .job .employment-details {
+        align-items: center;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+
+    .job .employment-details .employment-text {
+        flex-basis: 65%;
+    }
+
+    .job .two-responsibilities {
+        flex-basis: 100%;
+    }
+
+    .responsibilities {
+        margin-top: 2rem;
+    }
+
+    .job .responsibilities {
+        flex-basis: 100%;
+    }
+
+    .contact-me-details h2.section-title {
+        text-align: start;
+    }
+}
+
+/* Breakpoint (Laptops): 992px */
+@media only screen and (max-width: 992px) {
+    :root {
+        --title-font: 4rem;
+        --sub-title-font: 3rem;
+        --section-font: 4rem;
+        --h2-font: 2.5rem;
+        --h3-font: 1.5rem;
+        --h4-font: 1.25rem;
+        --p-font: 1.10rem;
+    }
+
+    section {
+        padding: 70px 5%;
+    }
+
+    header {
+        justify-content: end;
+        padding: 30px 80px;
+    }
+
+    .home-text {
+        margin-top: 20%;
+    }
+
+    .photo-bar img {
+        width: 225px;
+    }
+
+    #open-menu {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+}
+
+/* Breakpoint (Tablets): 768px */
+@media only screen and (max-width: 768px) {
+    
+    .photo-bar {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .photo-bar img {
+        margin: 1.5rem;
+        width: 400px;
+    }
+
+    #contact-me {
+        flex-direction: column;
+    }
+
+    .contact-me-details {
+        width: 100%;
+    }
+
+    .contact-me-details {
+        align-self: center;
+        width: fit-content;
+    }
+
+    .contact-me-form form {
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Breakpoint (Portrait Phones): 576px */
+@media only screen and (max-width: 576px) {
+    :root {
+        --title-font: 3rem;
+        --sub-title-font: 2rem;
+        --section-font: 3rem;
+        --h2-font: 2.5rem;
+        --h3-font: 1.5rem;
+        --h4-font: 1.25rem;
+        --p-font: 1.10rem;
+    }    
+
+    #mobile-nav-menu a {
+        font-size: var(--h3-font);
+    }
+
+    .employment-details {
+        flex-direction: column;
+    }
+
+    .edu-select .tab-link-edu {
+        font-size: 1.5rem;
+    }
+
+    .degree-details {
+        flex-direction: column;
+    }
+
+    .degree-details .school-info {
+        margin-top: 1.5rem;
+    }
 }
