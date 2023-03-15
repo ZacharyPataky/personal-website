@@ -650,6 +650,30 @@ form textarea {
     }
 }
 
+/* Breakpoint (Horizontal iPad): 1024px */
+@media only screen and (max-width: 1200px) {
+    .photo-bar img {
+        width: 240px;
+    }
+
+    section {
+        padding: 70px 5%;
+    }
+
+    header {
+        justify-content: end;
+        padding: 30px 80px;
+    }
+
+    #open-menu {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+}
+
 /* Breakpoint (Laptops): 992px */
 @media only screen and (max-width: 992px) {
     :root {
@@ -666,25 +690,12 @@ form textarea {
         padding: 70px 5%;
     }
 
-    header {
-        justify-content: end;
-        padding: 30px 80px;
-    }
-
     .home-text {
         margin-top: 20%;
     }
 
     .photo-bar img {
         width: 225px;
-    }
-
-    #open-menu {
-        display: block;
-    }
-
-    #nav-menu {
-        display: none;
     }
 }
 
@@ -726,10 +737,10 @@ form textarea {
     :root {
         --title-font: 3rem;
         --sub-title-font: 2rem;
-        --section-font: 3rem;
-        --h2-font: 2.5rem;
-        --h3-font: 1.5rem;
-        --h4-font: 1.25rem;
+        --section-font: 2.75rem;
+        --h2-font: 2.25rem;
+        --h3-font: 1.25rem;
+        --h4-font: 1.15rem;
         --p-font: 1.10rem;
     }    
 
@@ -771,5 +782,14 @@ form textarea {
 
     .job .employment-details img {
         width: 275px;
+    }
+
+    .section-header {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .section-header h4 {
+        margin-top: 1rem;
     }
 }
