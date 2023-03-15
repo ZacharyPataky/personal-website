@@ -780,6 +780,11 @@ form textarea {
         font-size: var(--h4-font);
     }
 
+    header {
+        justify-content: end;
+        padding: 30px 40px;
+    }
+
     .photo-bar img {
         width: 300px;
     }
