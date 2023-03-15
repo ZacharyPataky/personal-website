@@ -567,6 +567,13 @@ form textarea {
     margin-top: 1rem;
 }
 
+/* Breakpoint: 1400px */
+@media only screen and (max-width: 1600px) {
+    .photo-bar img {
+        width: 350px;
+    }
+}
+
 /* Breakpoint (Large Devices): 1200px */
 @media only screen and (max-width: 1200px) {
     :root {
@@ -701,7 +708,7 @@ form textarea {
 
 /* Breakpoint (Tablets): 768px */
 @media only screen and (max-width: 768px) {
-    
+
     .photo-bar {
         align-items: center;
         flex-direction: column;
@@ -742,7 +749,7 @@ form textarea {
         --h3-font: 1.25rem;
         --h4-font: 1.15rem;
         --p-font: 1.10rem;
-    }    
+    }
 
     #mobile-nav-menu a {
         font-size: var(--h3-font);
@@ -777,7 +784,8 @@ form textarea {
     }
 
     .education-opportunity .degree-details img {
-        width: 275px;;
+        width: 275px;
+        ;
     }
 
     .job .employment-details img {
