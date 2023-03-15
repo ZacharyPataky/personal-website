@@ -178,11 +178,8 @@ nav a:hover {
 
 /* |--| About Me |-----------------------------------------------------------| */
 
-.about-me-img {
-    align-self: center;
-}
-
 .about-me-image img {
+    border-radius: 0.5rem;
     height: auto;
     max-width: 100%;
     pointer-events: none;
@@ -223,6 +220,8 @@ nav a:hover {
 .photo-bar img {
     border-radius: 0.5rem;
     margin: calc(10%/6);
+    object-fit: cover;
+    overflow: hidden;
     pointer-events: none;
 }
 
@@ -569,6 +568,10 @@ form textarea {
 
 /* Breakpoint: 1400px */
 @media only screen and (max-width: 1600px) {
+    .about-me-image img {
+        width: 450px;
+    }
+
     .photo-bar img {
         width: 350px;
     }
@@ -659,6 +662,10 @@ form textarea {
 
 /* Breakpoint (Horizontal iPad): 1024px */
 @media only screen and (max-width: 1200px) {
+    .about-me-text {
+        text-align: center;
+    }
+    
     .photo-bar img {
         width: 240px;
     }
@@ -708,7 +715,6 @@ form textarea {
 
 /* Breakpoint (Tablets): 768px */
 @media only screen and (max-width: 768px) {
-
     .photo-bar {
         align-items: center;
         flex-direction: column;
@@ -774,6 +780,10 @@ form textarea {
 
 /* Breakpoint (Narrower Phones): 400px */
 @media only screen and (max-width: 400px) {
+    #mobile-nav-menu a {
+        font-size: var(--h4-font);
+    }
+
     .photo-bar img {
         width: 300px;
     }
@@ -785,7 +795,6 @@ form textarea {
 
     .education-opportunity .degree-details img {
         width: 275px;
-        ;
     }
 
     .job .employment-details img {
