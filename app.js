@@ -1,5 +1,4 @@
 // Tabbing block for "Education"
-
 let tabLinks_edu = document.getElementsByClassName('tab-link-edu');
 let tabContents_edu = document.getElementsByClassName('tab-contents-edu');
 
@@ -14,3 +13,10 @@ function openTab_edu(tabName) {
     event.currentTarget.classList.add('active-link-edu');
     document.getElementById(tabName).classList.add('active-tab-edu');
 }
+
+// Reset the "Contact Me" form
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
