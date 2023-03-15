@@ -1,0 +1,428 @@
+/* |--| Basic Styling |------------------------------------------------------| */
+
+:root {
+    --background-color: #282A36;
+    --current-line: #44475A;
+    --foreground: #F8F8F2;
+    --comment: #6272A4;
+    --cyan: #8BE9FD;
+    --green: #50FA7B;
+    --orange: #FFB86C;
+    --pink: #FF79C6;
+    --purple: #BD93F9;
+    --red: #FF5555;
+    --yellow: #F1FA8C;
+
+    --title-font: 5rem;
+    --sub-title-font: 4rem;
+    --section-font: 4rem;
+    --h2-font: 3rem;
+    --h3-font: 2rem;
+    --h4-font: 1.5rem;
+    --p-font: 1.17rem;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inconsolata', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+*::selection {
+    background: var(--yellow);
+    color: var(--background-color);
+}
+
+body {
+    background: var(--background-color);
+    color: var(--foreground);
+}
+
+section {
+    padding: 70px 10%;
+}
+
+.button {
+    border: 0;
+    background: var(--purple);
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    cursor: pointer;
+    display: block;
+    font-size: var(--p-font);
+    margin: 2rem 0;
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    transition: 0.4s;
+    width: fit-content;
+}
+
+.button:hover {
+    background: var(--cyan);
+    color: var(--background-color);
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* |--| Scrollbar |----------------------------------------------------------| */
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--pink);
+    background-clip: content-box;
+}
+
+/* |--| Header |-------------------------------------------------------------| */
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 170px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--foreground);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 2px var(--background-color);
+}
+
+nav a:hover {
+    color: var(--cyan);
+    transition: 0.4s;
+}
+
+#menu-icon {
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+}
+
+/* header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 170px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    color: var(--foreground);
+    font-size: var(--sub-title-font);
+    font-weight: 700;
+    text-shadow: 1px 1px 2px var(--background-color);
+}
+
+.logo:hover {
+    color: var(--yellow);
+    transition: 0.4s;
+}
+
+nav a {
+    color: var(--foreground);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 2px var(--background-color);
+}
+
+nav a:hover {
+    color: var(--cyan);
+    transition: 0.4s;
+}
+
+#menu-icon {
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+} */
+
+/* |--| Home |---------------------------------------------------------------| */
+
+.home {
+    background: center/cover url(images/home/header-wallpaper.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.home-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--background-color);
+}
+
+.home-text h1 {
+    color: var(--pink);
+    font-size: var(--title-font);
+}
+
+.home-text h2 {
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+/* |--| About Me |-----------------------------------------------------------| */
+
+.about-me-img {
+    align-self: center;
+}
+
+.about-me-image img {
+    height: auto;
+    max-width: 100%;
+    pointer-events: none;
+    width: 600px;
+}
+
+.about-me-text {
+    align-self: center;
+    flex-basis: 50%;
+}
+
+.about-me-text h2 {
+    color: var(--pink);
+    font-size: var(--section-font);
+    margin-bottom: 1.5rem;
+}
+
+.about-me-text p {
+    color: var(--foreground);
+    font-size: var(--p-font);
+    line-height: 1.7;
+    margin: 1rem 0;
+}
+
+.about-me-text p span {
+    color: var(--purple);
+}
+
+/* |--| Photo Bar |----------------------------------------------------------| */
+
+.photo-bar {
+    background: var(--current-line);
+    width: 100%;
+}
+
+.photo-bar img {
+    border-radius: 0.5rem;
+    margin: calc(10%/6);
+    pointer-events: none;
+}
+
+/* |--| Education |----------------------------------------------------------| */
+
+.education h2 {
+    color: var(--pink);
+    font-size: var(--sub-title-font);
+    margin-bottom: 1.5rem;
+}
+
+/* |--| Quote Bar |----------------------------------------------------------| */
+
+.quote-bar {
+    background: var(--current-line);
+    width: 100%;
+}
+
+/* |--| Work Experience |----------------------------------------------------| */
+
+.work-experience h2 {
+    color: var(--pink);
+    font-size: var(--sub-title-font);
+    margin-bottom: 1.5rem;
+}
+
+.job {
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    padding: 3rem 1.5rem;
+}
+
+.job:nth-child(odd) {
+    background: var(--current-line);
+}
+
+.job .employment-details {
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.job .employment-details img {
+    border-radius: 0.5rem;
+    width: 300px;
+}
+
+.job .employment-details h3 {
+    color: var(--purple);
+    font-size: var(--h3-font);
+    margin-top: 1.5rem;
+}
+
+.job .employment-details h4 {
+    color: var(--foreground);
+    font-size: var(--h4-font);
+    margin-top: 1rem;
+}
+
+.job .responsibilities {
+    flex-basis: 70%;
+}
+
+.job .two-responsibilities {
+    flex-basis: 70%;
+}
+
+.job .two-responsibilities .responsibilities:not(:first-child) {
+    margin-top: 2rem;
+}
+
+.job .two-responsibilities .responsibilities h3 span {
+    color: var(--orange);
+}
+
+.job .responsibilities h3 {
+    color: var(--purple);
+    font-size: var(--h3-font);
+}
+
+.job .responsibilities h4 {
+    color: var(--orange);
+    font-size: var(--h4-font);
+    margin-top: 1.5rem;
+}
+
+.job .responsibilities ul {
+    margin-top: 1rem;
+}
+
+.responsibilities ul li {
+    font-size: var(--p-font);
+    line-height: 1.7;
+    list-style: circle;
+    margin: 0.5rem;
+}
+
+.responsibilities ul > ul {
+    margin-left: 2rem;
+}
+
+.responsibilities span {
+    color: var(--purple);
+}
+
+.responsibilities span.course-title {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.multiple-role {
+    margin-top: 1.5rem;
+}
+
+/* |--| Contact Me |---------------------------------------------------------| */
+
+.contact-me-details {
+    flex-basis: 35%;
+}
+
+.contact-me-details h2 {
+    color: var(--pink);
+    font-size: var(--sub-title-font);
+    margin-bottom: 1.5rem;
+}
+
+.contact-me-detail {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.2rem;
+}
+
+.contact-me-detail p {
+    font-size: var(--p-font);
+}
+
+.contact-me-detail i {
+    color: var(--purple);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.contact-me-social {
+    margin-top: 2rem;
+}
+
+.contact-me-social a {
+    color: var(--current-line);
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 0.6rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.contact-me-social a:hover {
+    color: var(--cyan);
+    transform: translateY(-5px);
+}
+
+.contact-me-form {
+    flex-basis: 60%;
+}
+
+.contact-me-form form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    background: var(--current-line);
+    border: 0;
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    font-size: var(--p-font);
+    margin: 1rem 0;
+    outline: none;
+    padding: 1rem;
+    resize: none;
+    width: 100%;
+}
+
+.resume-button {
+    margin-top: 1rem;
+}
