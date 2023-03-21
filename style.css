@@ -172,8 +172,15 @@ nav a:hover {
 }
 
 #header-arrow {
+    border-radius: 2rem;
     color: var(--foreground);
     font-size: var(--h2-font);
+}
+
+#header-arrow:hover {
+    background-color: var(--pink);
+    transition: 0.4s;
+    transform: translateY(5px);
 }
 
 /* |--| About Me |-----------------------------------------------------------| */
