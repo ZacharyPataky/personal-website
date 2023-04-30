@@ -21,17 +21,19 @@
 |
 |------| Letter Spacing
 |
-|--| Colors
+|--| Colors | -- Courtesy of the Dracula Theme
 |
-|------| Primary
-|
-|------| Tints
-|
-|------| Shades
-|
-|------| Accents
-|
-|------| Greys
+| Background Color: #282a36 ; rgba(40, 42, 52, 1)
+| Current Line: #44475a
+| Foreground: #f8f8f2
+| Comment: #6272a4
+| Cyan: #8be9fd
+| Green: #50fa7b
+| Orange: #ffb86c
+| Pink: #ff79c6
+| Purple: #bd93f9
+| Red: #ff5555
+| Yellow: #f1fa8c
 |
 |--| Shadows
 |
@@ -53,13 +55,20 @@
     padding: 0;
 }
 
+*::selection {
+    background: #f1fa8c;
+    color: #282a36;
+}
+
 html {
     /* 10px / 16px = 0.625 = 62.5% */
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
-    color: #555;
+    background-color: #282a36;
+    color: #f8f8f2;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     line-height: 1;
