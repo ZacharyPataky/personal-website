@@ -3,6 +3,16 @@
 /**********/
 
 .header {
+    background-image: linear-gradient(to bottom,
+            rgba(40, 42, 52, 0.8),
+            rgba(40, 42, 52, 0.4)),
+        url(../img/_DSC3375.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-bar {
     align-items: center;
     display: flex;
     height: 9.6rem;
@@ -10,19 +20,6 @@
     padding: 0 4.8rem;
     position: relative;
 }
-
-/* .logo-box {
-    align-items: center;
-    background-color: #6272a4;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 0.3rem;
-}
-
-.logo {
-    height: 4.4rem;
-} */
 
 .logo:link,
 .logo:visited {
@@ -90,29 +87,20 @@
 }
 
 /* STICKY */
-.sticky .header {
-    background-color: rgba(40, 42, 52, 0.5);
+.sticky .nav-bar {
+    /* background-color: pink; */
+    background-color: rgba(40, 42, 52, 0.95);
     bottom: 0;
-    height: 8rem;
-    padding-bottom: 0;
-    padding-top: 0;
+    height: 9.6rem;
+    left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
 }
 
-.sticky .section-hero {
+.sticky .header-text {
     margin-top: 9.6rem;
-}
-
-/********/
-/* HERO */
-/********/
-
-.section-hero {
-    background-color: red;
-    height: 10rem;
 }
 
 /************/
@@ -120,8 +108,8 @@
 /************/
 
 .section-about-me {
-    background-color: orange;
-    height: 10rem;
+    background-color: red;
+    height: 100rem;
 }
 
 /*************/
@@ -129,8 +117,8 @@
 /*************/
 
 .section-education {
-    background-color: yellow;
-    height: 10rem;
+    background-color: orange;
+    height: 100rem;
 }
 
 /*******************/
@@ -138,7 +126,7 @@
 /*******************/
 
 .section-work-exp {
-    background-color: green;
+    background-color: yellow;
     height: 10rem;
 }
 
@@ -147,7 +135,7 @@
 /**************/
 
 .section-contact-me {
-    background-color: blue;
+    background-color: green;
     height: 10rem;
 }
 
@@ -156,6 +144,6 @@
 /**********/
 
 .footer {
-    background-color: indigo;
+    background-color: blue;
     height: 10rem;
 }

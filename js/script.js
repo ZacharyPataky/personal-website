@@ -1,18 +1,18 @@
 console.log('Hello world!');
 
+// Header element
+const headerEl = document.querySelector('.header');
+
 //////////////////////////////////////////////////////////////
 // Enable mobile navigation
 const btnNavEl = document.querySelector('.btn-mobile-nav');
-const headerEl = document.querySelector('.header');
 
 btnNavEl.addEventListener('click', function () {
     headerEl.classList.toggle('nav-open');
 });
 
-
 //////////////////////////////////////////////////////////////
 // Sticky navigation
-const sectionHeroEl = document.querySelector('.section-hero');
 const obs = new IntersectionObserver(
     function (entries) {
         const ent = entries[0];
@@ -26,6 +26,6 @@ const obs = new IntersectionObserver(
         root: null,
         // Strikes as soon as the hero is outside of the viewport
         threshold: 0,
-        rootMargin: '-80px'
+        rootMargin: '-96px'
     })
-obs.observe(sectionHeroEl);
+obs.observe(headerEl);
