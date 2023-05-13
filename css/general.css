@@ -18,6 +18,7 @@
 |
 | Default: 1
 | Paragraph Default: 1.6
+| List Default: 1.8
 |
 |------| Letter Spacing
 |
@@ -37,7 +38,12 @@
 |
 |--| Shadows
 |
+| Accordion: 0 0 3.2rem rgba(139, 223, 253, 0.08);
+| Accordion Item Hover: 0 0 3.2rem rgba(139, 223, 253, 0.12)
+|
 |--| Border Radius
+|
+| Default: 10px
 |
 |--| Whitespace
 |

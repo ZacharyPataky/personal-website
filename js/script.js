@@ -29,3 +29,13 @@ const obs = new IntersectionObserver(
         rootMargin: '-96px'
     })
 obs.observe(headerEl);
+
+//////////////////////////////////////////////////////////////
+// Work Experience - Accordion
+
+const workExpAccItem = document.querySelectorAll(".accordion-item");
+workExpAccItem.forEach(workAccItem => {
+    workAccItem.addEventListener("click", () => {
+        workAccItem.classList.toggle('accordion-item--open')
+    })
+})
