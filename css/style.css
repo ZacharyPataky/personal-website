@@ -6,7 +6,7 @@
     background-image: linear-gradient(to bottom,
             rgba(40, 42, 52, 0.8),
             rgba(40, 42, 52, 0.4)),
-        url(../img/_DSC3375.jpg);
+        url(../img/game.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -108,9 +108,24 @@
 /************/
 
 .section-about-me {
-    background-color: red;
-    height: 100rem;
+    padding: 9.6rem 0;
 }
+
+/* .about-me-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.about-me-text:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.about-me-image-box {}
+
+.about-me-image {
+    border-radius: 8px;
+    width: 100%;
+} */
 
 /*************/
 /* EDUCATION */
