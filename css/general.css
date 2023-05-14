@@ -163,6 +163,30 @@ body {
     text-transform: uppercase;
 }
 
+.btn,
+.btn:link,
+.btn:visited {
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: #8be9fd;
+    color: #282a36;
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: #bd93f9;
+    color: #f8f8f2;
+    cursor: pointer;
+}
 
 /*****************************/
 /* HELPER / SETTINGS CLASSES */
