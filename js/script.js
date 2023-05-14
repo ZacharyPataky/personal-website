@@ -32,10 +32,13 @@ obs.observe(headerEl);
 
 //////////////////////////////////////////////////////////////
 // Work Experience - Accordion
-
 const workExpAccItem = document.querySelectorAll(".accordion-item");
 workExpAccItem.forEach(workAccItem => {
     workAccItem.addEventListener("click", () => {
-        workAccItem.classList.toggle('accordion-item--open')
+        workAccItem.classList.toggle('accordion-item--open');
+
+        const itemIcon = workAccItem.children[3];
+        itemIcon.name = (itemIcon.name === 'chevron-down-outline')
+            ? 'chevron-up-outline' : 'chevron-down-outline';
     })
 })

@@ -306,8 +306,8 @@
 }
 
 .social-link--icon {
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 3.2rem;
+    width: 3.2rem;
     transition: all 0.2s;
 }
 
@@ -352,7 +352,7 @@ form {
     border-radius: 10px;
     color: #282a36;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 1.6rem 3.2rem;
     transition: all 0.2s;
 }
