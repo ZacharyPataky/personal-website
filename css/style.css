@@ -111,21 +111,23 @@
     padding: 9.6rem 0;
 }
 
-/* .about-me-text {
+.about-me--text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.about-me--paragraph {
     font-size: 1.8rem;
     line-height: 1.8;
 }
 
-.about-me-text:not(:first-child) {
-    margin-top: 1rem;
-}
+.about-me--image-box {}
 
-.about-me-image-box {}
-
-.about-me-image {
-    border-radius: 8px;
+.about-me--image {
+    border-radius: 10px;
     width: 100%;
-} */
+}
 
 /*************/
 /* EDUCATION */
