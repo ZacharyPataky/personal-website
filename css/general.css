@@ -111,6 +111,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.grid--2-cols-third {
+    grid-template-columns: 0.5fr 1fr;
+}
+
 .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -125,6 +129,28 @@ body {
 
 .grid--center-v {
     align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    gap: 2.4rem;
+    justify-content: space-between;
+}
+
+.flex--33-percent {
+    flex-basis: 33%
+}
+
+.flex--50-percent {
+    flex-basis: 50%;
+}
+
+.flex--66-percent {
+    flex-basis: 66%;
+}
+
+.flex--70-percent {
+    flex-basis: 70%;
 }
 
 .heading-primary,
