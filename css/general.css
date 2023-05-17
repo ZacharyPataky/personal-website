@@ -214,6 +214,70 @@ body {
     cursor: pointer;
 }
 
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.accordion-item {
+    align-items: center;
+    background-color: #44475a;
+    border-radius: 10px;
+    box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.08);
+    column-gap: 2.4rem;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    padding: 2.4rem;
+    row-gap: 3.2rem;
+    transition: all 0.2s;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.12);
+    cursor: pointer;
+}
+
+.accordion-item:hover .accordion-item--header,
+.accordion-item:hover .accordion-item--icon {
+    color: #8be9fd;
+}
+
+.accordion-item--header {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.accordion-item--icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.accordion-item--icon:hover {
+    color: #8be9fd;
+    cursor: pointer;
+}
+
+.accordion-item--content {
+    display: none;
+    grid-column: 1 / 4;
+}
+
+.accordion-item--open {
+    border-top: 0.4rem solid #8be9fd;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.accordion-item--open .accordion-item--content {
+    display: block;
+}
+
+.accordion-item--open .accordion-item--header,
+.accordion-item--open .accordion-item--icon {
+    color: #8be9fd;
+}
+
 /*****************************/
 /* HELPER / SETTINGS CLASSES */
 /*****************************/
