@@ -285,3 +285,14 @@ body {
 .center-text {
     text-align: center;
 }
+
+.section-temp {
+    background-color: #f1fa8c;
+    padding: 9.6rem 0;
+}
+
+.temp-text {
+    color: #ffb86c;
+    font-size: 10rem;
+    font-weight: 700;
+}
