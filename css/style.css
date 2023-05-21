@@ -265,8 +265,10 @@
 
 .comp-sci-link:link,
 .comp-sci-link:visited {
-    color: #f8f8f2;
+    color: #f1fa8c;
     display: inline-block;
+    font-size: 1.6rem;
+    /* font-weight: 500; */
     margin: 0 0.2rem;
     text-decoration: none;
 }
