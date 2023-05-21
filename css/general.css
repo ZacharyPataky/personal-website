@@ -278,6 +278,17 @@ body {
     color: #8be9fd;
 }
 
+.photo-bar {
+    display: grid;
+    gap: 3.2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photo-bar--img {
+    border-radius: 10px;
+    width: 100%;
+}
+
 /*****************************/
 /* HELPER / SETTINGS CLASSES */
 /*****************************/
