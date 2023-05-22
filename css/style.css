@@ -221,7 +221,7 @@
 
 .school-details--image {
     border-radius: 10px;
-    box-shadow: 0 0 6.4rem rgba(139, 223, 253, 0.2);
+    box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.2);
     width: 25%;
 }
 
@@ -265,7 +265,7 @@
 
 .comp-sci-link:link,
 .comp-sci-link:visited {
-    color: #f1fa8c;
+    color: #f8f8f2;
     display: inline-block;
     font-size: 1.6rem;
     /* font-weight: 500; */
@@ -275,7 +275,7 @@
 
 .comp-sci-link:hover,
 .comp-sci-link:active {
-    color: #8be9fd;
+    color: #f1fa8c;
     transition: all 0.2s;
 }
 
@@ -307,6 +307,7 @@
 
 .employer-details--image {
     border-radius: 10px;
+    box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.2);
     width: 50%;
 }
 
