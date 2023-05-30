@@ -739,11 +739,12 @@
                     </ul>
                     <a href="resources/pataky-resume.pdf" class="btn btn--full" download>Download Resume</a>
                 </div>
-                <form action="#" class="contact-me--form flex--66-percent">
-                    <input type="text" class="form-input" id="name" placeholder="Your name" required>
-                    <input type="email" class="form-input" id="email" placeholder="Your email address" required>
-                    <textarea name="message" class="form-input" id="message" rows="6" placeholder="Your message"
-                        required></textarea>
+                <form class="contact-me--form flex--66-percent" name="contact-me-form" netlify>
+                    <input type="text" class="form-input" id="name" name="name" placeholder="Your name" required>
+                    <input type="email" class="form-input" id="email" name="email" placeholder="Your email address"
+                        required>
+                    <textarea name="message" class="form-input" id="message" name="message" rows="6"
+                        placeholder="Your message" required></textarea>
                     <button type="submit" class="form-btn">Submit</button>
                 </form>
             </div>
