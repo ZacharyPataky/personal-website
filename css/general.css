@@ -1,0 +1,312 @@
+/*
+|
+|--| Typography System 
+|
+|------| Font Sizes (px)
+|
+| 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30
+| 36 / 44 / 52 / 62 / 74 / 86 / 98
+|
+|------| Font Weights
+|
+| Default: 400
+| Medium: 500
+| Semi-Bold: 600
+| Bold: 700
+|
+|------| Line Heights
+|
+| Default: 1
+| Paragraph Default: 1.6
+| List Default: 1.8
+| Education Header Small: 1.1
+|
+|------| Letter Spacing
+|
+|--| Colors | -- Courtesy of the Dracula Theme
+|
+| Background Color: #282a36 ; rgba(40, 42, 52, 1)
+| Current Line: #44475a
+| Foreground: #f8f8f2
+| Comment: #6272a4
+| Cyan: #8be9fd
+| Green: #50fa7b
+| Orange: #ffb86c
+| Pink: #ff79c6
+| Purple: #bd93f9
+| Red: #ff5555
+| Yellow: #f1fa8c
+|
+|--| Shadows
+|
+| Accordion: 0 0 3.2rem rgba(139, 223, 253, 0.08);
+| Accordion Item Hover: 0 0 3.2rem rgba(139, 223, 253, 0.12)
+|
+|--| Border Radius
+|
+| Default: 10px
+|
+|--| Whitespace
+|
+| 2 / 4 / 8 / 12 / 16 / 24 / 32
+| 48 / 64 / 80 / 96 / 128
+|
+*/
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background: #f1fa8c;
+    color: #282a36;
+}
+
+html {
+    /* 10px / 16px = 0.625 = 62.5% */
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+/*********************************/
+/* General / Reusable Components */
+/*********************************/
+
+.container {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 0 3.2rem;
+}
+
+.grid {
+    column-gap: 6.4rem;
+    display: grid;
+    /* margin-bottom: 9.6rem; */
+    row-gap: 9.6rem;
+}
+
+/* .grid:last-child {
+    margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--2-cols-third {
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    gap: 2.4rem;
+    justify-content: space-between;
+}
+
+.flex--33-percent {
+    flex-basis: 33%
+}
+
+.flex--50-percent {
+    flex-basis: 50%;
+}
+
+.flex--66-percent {
+    flex-basis: 66%;
+}
+
+.flex--70-percent {
+    flex-basis: 70%;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    color: #bd93f9;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 4.8rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.sub-heading {
+    color: #ff79c6;
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: #8be9fd;
+    color: #282a36;
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-color: #bd93f9;
+    color: #f8f8f2;
+    cursor: pointer;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.accordion-item {
+    align-items: center;
+    background-color: #44475a;
+    border-radius: 10px;
+    box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.08);
+    column-gap: 2.4rem;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    padding: 2.4rem;
+    row-gap: 3.2rem;
+    transition: all 0.2s;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.12);
+    cursor: pointer;
+}
+
+.accordion-item:hover .accordion-item--header,
+.accordion-item:hover .accordion-item--icon {
+    color: #8be9fd;
+}
+
+.accordion-item--header {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.accordion-item--icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.accordion-item--icon:hover {
+    color: #8be9fd;
+    cursor: pointer;
+}
+
+.accordion-item--content {
+    display: none;
+    grid-column: 1 / 4;
+}
+
+.accordion-item--open {
+    border-top: 0.4rem solid #8be9fd;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.accordion-item--open .accordion-item--content {
+    display: block;
+}
+
+.accordion-item--open .accordion-item--header,
+.accordion-item--open .accordion-item--icon {
+    color: #8be9fd;
+}
+
+.photo-bar {
+    display: grid;
+    gap: 3.2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photo-bar--img {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*****************************/
+/* HELPER / SETTINGS CLASSES */
+/*****************************/
+
+.center-text {
+    text-align: center;
+}
+
+.section-temp {
+    background-color: #f1fa8c;
+    padding: 9.6rem 0;
+}
+
+.temp-text {
+    color: #ffb86c;
+    font-size: 10rem;
+    font-weight: 700;
+}

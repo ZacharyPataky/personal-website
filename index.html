@@ -4,447 +4,757 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Discover the professional background and personal interests of Zachary A. Pataky, a skilled software engineer, on his personal website - the perfect online resume.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is Zachary Pataky's personal website, featuring his resume as a software engineer">
-    <meta name="keywords" content="Zachary, Pataky, Zachary Pataky, Software Engineer, Resume">
-    <title>Zachary A. Pataky</title>
+    <title>Zachary A. Pataky &mdash; Software Engineer</title>
 
-    <!-- CSS Style Sheet -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="theme-color" content="#333333">
 
-    <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- Google Font - Poppins -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+
+    <!-- Ion Icon Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- JavaScript -->
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
-
-    <!-- Header -->
-    <header id="header">
-        <div class="bx bx-menu" id="open-menu" onclick="openMenu()"></div>
-
-        <nav id="nav-menu">
-            <a href="#home">Home</a>
-            <a href="#about-me">About Me</a>
-            <a href="#education">Education</a>
-            <a href="#work-experience">Work Experience</a>
-            <a href="#contact-me">Contact Me</a>
-        </nav>
-
-        <!-- I know this is stupid, but I'm getting tired of this -->
-        <nav id="mobile-nav-menu">
-            <div class="bx bx-x" id="close-menu" onclick="closeMenu()"></div>
-            <a href="#home" onclick="closeMenu()">Home</a>
-            <a href="#about-me" onclick="closeMenu()">About Me</a>
-            <a href="#education" onclick="closeMenu()">Education</a>
-            <a href="#work-experience" onclick="closeMenu()">Work Experience</a>
-            <a href="#contact-me" onclick="closeMenu()">Contact Me</a>
-        </nav>
+    <header class="header">
+        <div class="nav-bar">
+            <a href="#top" class="logo">ZAP</a>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a href="#top" class="main-nav-link">Welcome</a></li>
+                    <li><a href="#about-me" class="main-nav-link">About Me</a></li>
+                    <li><a href="#education" class="main-nav-link">Education</a></li>
+                    <li><a href="#work-experience" class="main-nav-link">Work Experience</a></li>
+                    <li><a href="#contact-me" class="main-nav-link">Contact Me</a></li>
+                </ul>
+            </nav>
+            <button class="btn-mobile-nav">
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button>
+        </div>
     </header>
 
-    <!-- Home -->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h1>Zachary A. Pataky</h1>
-            <h2>Software Engineer</h2>
-            <a href="#about-me" class="bx bx-chevron-down" id="header-arrow"></a>
-        </div>
-    </section>
+    <main>
+        <section class="section-about-me" id="about-me">
+            <div class="container">
+                <span class="sub-heading">About Me</span>
+                <h2 class="heading-secondary">The man, the myth, the legend</h2>
+            </div>
 
-    <!-- About Me -->
-    <section class="section" id="about-me">
-        <div class="about-me-text">
-            <h2 class="section-title">About Me</h2>
-            <p>Greetings! My name is <span>Zachary Pataky</span>, and I'll be guiding you through this <span>resume</span>.</p>
-            <p>
-                I'm just your average twenty-something-year-old who spends too much time staring at computer
-                screens. I started my programming journey at <span>Canisius College</span>, where I earned a
-                <span>BS in Computer Science</span>. I spent four long, grueling, Zoom-ridden years honing my skills
-                through projects covering <span>distributed computing</span>, <span>artificial intelligence</span>,
-                <span>video game development</span>, <span>web development</span>, and so much more. I was an
-                excellent student, tutor, teacher's assistant, and, most-importantly, member of my campus community.
-            </p>
-            <p>
-                Nowadays, I spend most of my development time spread between my job and personal studies. I currently
-                work at <span>CYBRA Corporation</span> as a <span>Junior Software Engineer</span>. By all means, I'm
-                a <span>full-stack developer</span> with a preference for front-end design and execution. Outside of
-                work, I dedicate decent chucks of time to my <span>Udemy coursework</span> and other personal
-                projects. I'm a <span>forever student</span> with a <span>growth mindset</span>, and <span>I will do
-                    whatever I can to become the best software developer I can be.</span>
-            </p>
-        </div>
-        <div class="about-me-image">
-            <img src="images/home/headshot.jpg" alt="headshot">
-        </div>
-    </section>
+            <div class="container grid grid--2-cols">
+                <div class="about-me--text-box">
+                    <p class="about-me--paragraph">
+                        What took you so long to get here?
+                    </p>
+                    <p class="about-me--paragraph">
+                        My name is Zachary Pataky, and I'm a software engineer. I currently operate at Merchants
+                        Insurance Group as a Full-Stack Developer responsible for developing our internal web portals.
+                    </p>
+                    <p class="about-me--paragraph">
+                        One thing that sets me apart is my strong growth mindset. I believe that with hard work
+                        and a willingness to learn, anyone can achieve their goals and continually improve
+                        themselves. I'm always looking for ways to expand my knowledge and skillset, both in my
+                        professional and personal life.
+                    </p>
+                    <p class="about-me--paragraph">
+                        When I'm not coding, you'll often find me playing video games, watching movies, reading books,
+                        or training Brazilian Jiu-Jitsu.
+                    </p>
+                    <p class="about-me--paragraph">
+                        I hope you enjoy snooping around my website—it took a while to cobble together. Feel free to
+                        drop me a message in the end.
+                    </p>
+                </div>
+                <div class="about-me--image-box">
+                    <img src="img/about-me/culture-day.jpg" alt="Zachary and Cat serving Milo Dinosaur"
+                        class="about-me--image">
+                </div>
+            </div>
+        </section>
 
-    <!-- Photo Bar -->
-    <section class="photo-bar" id="photo-bar">
-        <img src="images/photo-gallery/movie-theater.jpg" alt="movie-theater">
-        <img src="images/photo-gallery/ps2.jpg" alt="ps2">
-        <img src="images/photo-gallery/books.jpg" alt="books">
-    </section>
+        <section class="section-photo-bar">
+            <div class="container photo-bar">
+                <img src="img/photo-bar/movie-theater.jpg" alt="Movie theater" class="photo-bar--img">
+                <img src="img/photo-bar/ps2.jpg" alt="PS2 with games" class="photo-bar--img">
+                <img src="img/photo-bar/books.jpg" alt="Bookshelf with books" class="photo-bar--img">
+            </div>
+        </section>
 
-    <!-- Education -->
-    <section class="education" id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-opportunity" id="canisius-college">
-        
-            <!-- Degree Details -->
-            <div class="degree-details">
-                <img src="images/education/canisius-college.jpg" alt="canisius-college">
-                <div class="degree-text">
-                    <div class="school-info">
-                        <h3>Canisius College</h3>
-                        <h4>Buffalo, NY</h4>
-                        <h4>August 2018 - May 2022</h4>
-                    </div>
-                    <div class="line"></div>
-                    <div class="degree-info">
-                        <h3>Bachelor of Science in Computer Science</h3>
-                        <h4>Minor in <span>Leadership</span></h4>
-                        <h4>Cumulative GPA of <span>3.98/4.00</span></h4>
+        <section class="section-education" id="education">
+            <div class="container center-text">
+                <span class="sub-heading">Education</span>
+                <h2 class="heading-secondary">A lifelong learner</h2>
+            </div>
+
+            <div class="container accordion">
+                <div class="accordion-item accordion-item--open education">
+                    <p class="accordion-item--header">Canisius College</p>
+                    <p class="accordion-item--header">|</p>
+                    <p class="accordion-item--header">Computer Science BS</p>
+                    <ion-icon name="chevron-up-outline" class="accordion-item--icon"></ion-icon>
+                    <div class="accordion-item--content">
+                        <div class="grid grid--2-cols-third">
+                            <div class="education-header">
+                                <div class="education-header-links">
+                                    <p class="tab-link tab-link--active" onclick="openTab('degreeInformation')">
+                                        Degree Information
+                                    </p>
+                                    <span class="tab-link" onclick="openTab('activities')">Activities</span>
+                                    <span class="tab-link" onclick="openTab('honors-awards')">Honors and Awards</span>
+                                    <span class="tab-link" onclick="openTab('course-highlights')">
+                                        Course Highlights
+                                    </span>
+                                    <span class="tab-link" onclick="openTab('major-projects')">Major Projects</span>
+                                </div>
+                            </div>
+                            <div class="tab-contents tab-contents--active" id="degreeInformation">
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">School Information</span>
+                                    </div>
+                                    <div class="group--body--horizontal">
+                                        <img src="img/education/canisius-college.jpg" alt="Canisius College"
+                                            class="school-details--image">
+                                        <div class="school-details--text">
+                                            <span class="school-details--school">Canisius College</span>
+                                            <span class="school-details--address">2001 Main St, Buffalo, NY 14208</span>
+                                            <span class="school-details--date">August 2018 - May 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Academic Information</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <span class="group--body--paragraph">Major: Computer Science</span>
+                                        <span class="group--body--paragraph">Minor: Leadership</span>
+                                        <span class="group--body--paragraph">Cumulative GPA: 3.98/4.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-contents" id="activities">
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">FUSION Gaming Society</span>
+                                        <span class="group--header--sub-title">Member</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            A social club that unites members of Canisius College through the mutual
+                                            enjoyment of multiplayer gaming experiences, including but not limited
+                                            to video, board, card, and tabletop games.
+                                        </p>
+                                        <p class="group--body--paragraph">
+                                            Weekly meetings involved students congregating together playing games
+                                            spanning numerous consoles and tables.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Anime Club</span>
+                                        <span class="group--header--sub-title">Member</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            A social and cultural club focused on promoting a deeper appreciation
+                                            for Japanese animation (anime) as an art form.
+                                        </p>
+                                        <p class="group--body--paragraph">
+                                            Weekly meetings entail students voting on watching the current host's
+                                            chosen shows, as well as voting for the next week's lineup.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Computer Studies Club</span>
+                                        <span class="group--header--sub-title">Member</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            A social and educational club that intends to unite those not only
+                                            interested in the field of computers, but are also concerned as to where
+                                            computers stand in our present and future societies.
+                                        </p>
+                                        <p class="group--body--paragraph">
+                                            Common events include guest speakers, resume and technical workshops, and
+                                            more.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">New Griff Orientation</span>
+                                        <span class="group--header--sub-title">Lead, Orientation Leader</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            This organization facilitates the transition of incoming undergraduate
+                                            students and their family members to Canisius College by introducing
+                                            them to the Jesuit values of leadership, inclusion, and social justice by
+                                            providing shared experiences and information to set the tone for academic
+                                            success, personal growth, and meaningful connections.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-contents" id="honors-awards">
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Dean's List</span>
+                                        <span class="group--header--sub-title">Fall 2018</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            Awarded to students who have attained a grade point average of at least
+                                            3.50 for the semester and have completed at least four courses of three
+                                            credits or equivalent.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Dean's List with Distinction</span>
+                                        <span class="group--header--sub-title">Spring 2019 - Spring 2022</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            Awarded to students who have attained a grade point average of 4.00 for
+                                            the semester and have completed at least four courses of three credits or
+                                            equivalent.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">
+                                            Computer Science Excellence in Academics Award
+                                        </span>
+                                        <span class="group--header--sub-title">May 2022</spa>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            Presented to graduating computer science majors who have achieved an
+                                            outstanding academic performance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-contents" id="course-highlights">
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Computer Science Highlights</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <ul class="group--body--list">
+                                            <li class="list-item">Data Structures</li>
+                                            <li class="list-item">Computer Hardware</li>
+                                            <li class="list-item">Discrete Mathematics</li>
+                                            <li class="list-item">Automata and Algorithms</li>
+                                            <li class="list-item">Software Engineering</li>
+                                            <li class="list-item">
+                                                Operating System Design and Distributed Computing
+                                            </li>
+                                            <li class="list-item">Intelligent Systems</li>
+                                            <li class="list-item">Comparative Programming Languages</li>
+                                            <li class="list-item">Information Organization and Processing</li>
+                                            <li class="list-item">The Social Impact of Computing</li>
+                                            <li class="list-item">Intro to Web Development</li>
+                                            <li class="list-item">Cybersecurity Principles</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="group--body--alert">
+                                    Click
+                                    <a href="https://catalog.canisius.edu/undergraduate/courses/csc/"
+                                        class="comp-sci-link">here</a>
+                                    to read the Computer Science course catalog!
+                                </p>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Other Highlights</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <ul class="group--body--list">
+                                            <li class="list-item">Intro to Army and Critical Thinking</li>
+                                            <li class="list-item">Foundations of Leadership</li>
+                                            <li class="list-item">Introduction to Management</li>
+                                            <li class="list-item">Ethics</li>
+                                            <li class="list-item">Philosophy of Law</li>
+                                            <li class="list-item">Cyber Policies, Ethics, and Law</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-contents" id="major-projects">
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Distributed Computing Exercise</span>
+                                        <span class="group--header--sub-title">Fall 2020</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            Created a distributed information processing and querying system capable
+                                            of handling large quantities of data by leveraging the MPI library.
+                                        </p>
+                                        <p class="group--body--paragraph">Developed in C++.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Color-Ona</span>
+                                        <span class="group--header--sub-title">Fall 2020</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            Operated as Project Manager and programmer for a semester-long project
+                                            creating a video game.
+                                        </p>
+                                        <p class="group--body--paragraph">
+                                            Developed in Java using the LibGDX library.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-contents--group">
+                                    <div class="group--header">
+                                        <span class="group--header--title">Resume Website</span>
+                                        <span class="group--header--sub-title">Spring 2022</span>
+                                    </div>
+                                    <div class="group--body">
+                                        <p class="group--body--paragraph">
+                                            Produced a personal resume website as the capstone project of my Web
+                                            Development class.
+                                        </p>
+                                        <p class="group--body--paragraph">
+                                            Developed in HTML, CSS, Javascript, and PHP.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="edu-select">
-                <div class="tab-titles-edu">
-                    <p class="tab-link-edu active-link-edu" onclick="openTab_edu('activities')">Activities</p>
-                    <p class="tab-link-edu" onclick="openTab_edu('honors-awards')">Honors and Awards</p>
-                    <p class="tab-link-edu" onclick="openTab_edu('course-highlights')">Course Highlights</p>
-                    <p class="tab-link-edu" onclick="openTab_edu('major-projects')">Major Projects</p>
-                </div>
+        </section>
 
-                <!-- Activities -->
-                <div class="tab-contents-edu active-tab-edu" id="activities">
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>FUSION Gaming Society</h3>
-                            <h4>Member</h4>
-                        </div>
-                        <p>A social club that unites members of Canisius College through the mutual enjoyment of <span>multiplayer gaming experiences</span>, including but not limited to video, board, card, and tabletop games.</p>
-                        <p>Weekly meetings involved students congregating together playing games spanning <span>numerous consoles and tables</span>.</p>
-                    </div>
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>Anime Club</h3>
-                            <h4>Member</h4>
-                        </div>
-                        <p>A social and cultural club focused on promoting a deeper appreciation for <span>Japanese animation (anime)</span> as an art form.</p>
-                        <p>Weekly meetings entail students voting on <span>watching the current host's chosen shows</span>, as well as voting for the next week's lineup.</p>
-                    </div>
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>Computer Studies Club</h3>
-                            <h4>Member</h4>
-                        </div>
-                        <p>A social and educational club that intends to unite those not only interested in the <span>field of computers</span>, but are also concerned as to where <span>computers stand in our present and future societies</span>.</p>
-                        <p>Common events include guest <span>speakers, resume and technical workshops, and more</span>.</p>
-                    </div>
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>New Griff Orientation</h3>
-                            <h4>Lead, Orientation Leader</h4>
-                        </div>
-                        <p>
-                            This organization <span>facilitates the transition of incoming undergraduate students and their family members to Canisius College</span> by introducing them to the <span>Jesuit values of
-                            leadership, inclusion, and social justice</span> by providing shared experiences and information to set the tone for <span>academic success, personal growth, and meaningful connections</span>.
-                        </p>
-                    </div>
-                </div>
+        <section class="section-photo-bar">
+            <div class="container photo-bar">
+                <img src="img/photo-bar/bjj.jpg" alt="BJJ match" class="photo-bar--img">
+                <img src="img/photo-bar/steak.jpg" alt="Pan-seared ribeye" class="photo-bar--img">
+                <img src="img/photo-bar/chess.jpg" alt="Chessboard" class="photo-bar--img">
+            </div>
+        </section>
 
-                <!-- Honors and Awards -->
-                <div class="tab-contents-edu" id="honors-awards">
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>Dean's List</h3>
-                            <h4>Fall 2018</h4>
+        <section class="section-work-exp" id="work-experience">
+            <div class="container center-text">
+                <span class="sub-heading">Work Experience</span>
+                <h2 class="heading-secondary">Experience that speaks for itself</h2>
+            </div>
+
+            <div class="container accordion">
+                <div class="accordion-item accordion-item--open">
+                    <span class="accordion-item--header">Merchants Insurance Group</span>
+                    <span class="accordion-item--header">|</span>
+                    <span class="accordion-item--header">Full-Stack Developer</span>
+                    <ion-icon name="chevron-up-outline" class="accordion-item--icon"></ion-icon>
+                    <div class="accordion-item--content">
+                        <div class="grid grid--2-cols-third">
+                            <div class="employer-details">
+                                <img src="img/work-exp/merchants-insurance-group.jpg" alt="Merchants Insurance Group"
+                                    class="employer-details--image">
+                                <span class="employer-details--employer"> Merchants Insurance Group</span>
+                                <span class="employer-details--address">250 Main St, Buffalo, NY 14202</span>
+                                <span class="employer-details--date">May 2023 - Present</span>
+                            </div>
+                            <div class="job-responsibilities">
+                                <h3 class="heading-tertiary">Responsibilities</h3>
+                                <ul class="job-responsibilities--list">
+                                    <li class="job-responsibilities--item">
+                                        Debug and troubleshoot issues/defects pertaining to in-house code
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Monitor the technical performance of internal systems and respond to
+                                        requests from the development team
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Produce client deliverables such as detailed design documentation, unit test
+                                        plans, and well-documented code
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Gain an understanding of the unique business and technical requirements on
+                                        each project task to facilitate the most appropriate solution design
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Unit and system test all changes to ensure solutions operate according to
+                                        specifications
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Practice strong configuration management and version controls
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p>Awarded to students who have attained a <span>grade point average</span> of at least <span>3.50</span> for the semester and have completed at least four courses of three credits or equivalent.</p>
-                    </div>
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>Dean's List with Distinction</h3>
-                            <h4>Spring 2019 - Spring 2022</h4>
-                        </div>
-                        <p>Awarded to students who have attained a <span>grade point average</span> of <span>4.00</span> for the semester and have completed at least four courses of three credits or equivalent.</p>
-                    </div>
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>Computer Science Excellence in Academics Award</h3>
-                            <h4>May 2022</h4>
-                        </div>
-                        <p>Presented to graduating <span>computer science majors</span> who have achieved an <span>outstanding academic performance</span>.</p>
                     </div>
                 </div>
-
-                <!-- Course Highlights -->
-                <div class="tab-contents-edu" id="course-highlights">
-                    <div class="section-topic">
-                        <h3>Computer Science Highlights</h3>
-                        <ul>
-                            <li>Data Structures</li>
-                            <li>Computer Hardware</li>
-                            <li>Discrete Mathematics</li>
-                            <li>Automata and Algorithms</li>
-                            <li>Software Engineering</li>
-                            <li>Operating System Design and Distributed Computing</li>
-                            <li>Intelligent Systems</li>
-                            <li>Comparative Programming Languages</li>
-                            <li>Information Organization and Processing</li>
-                            <li>The Social Impact of Computing</li>
-                            <li>Intro to Web Development</li>
-                            <li>Cybersecurity Principles</li>
-                        </ul>
+                <div class="accordion-item">
+                    <span class="accordion-item--header">CYBRA Corporation</span>
+                    <span class="accordion-item--header">|</span>
+                    <span class="accordion-item--header">Junior Software Engineer</span>
+                    <ion-icon name="chevron-down-outline" class="accordion-item--icon"></ion-icon>
+                    <div class="accordion-item--content">
+                        <div class="grid grid--2-cols-third">
+                            <div class="employer-details">
+                                <img src="img/work-exp/cybra-corporation.jpg" alt="CYBRA Corporation"
+                                    class="employer-details--image">
+                                <span class="employer-details--employer">CYBRA Corporation</span>
+                                <span class="employer-details--address">954 Union Rd, West Seneca, NY 14224</span>
+                                <span class="employer-details--date">July 2022 - March 2023</span>
+                            </div>
+                            <div class="job-responsibilities">
+                                <h3 class="heading-tertiary">Responsibilities</h3>
+                                <ul class="job-responsibilities--list">
+                                    <li class="job-responsibilities--item">
+                                        Participated as an active component of an Agile development team, often
+                                        collaborating with other developers
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Debugged current and legacy software, sometimes on client-specific copies of the
+                                        application
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Contributed to the development of an upcoming web-based product using the
+                                        Angular / Spring Boot stack
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Instrumental in designing and implementing a new UI scheme in our MarkMagic Lite
+                                        application
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Skilled enough to earn responsibility over critical components of our new
+                                        product three weeks into employment
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="section-topic">
-                        <h3>Other Highlights</h3>
-                        <ul>
-                            <li>Intro to Army and Critical Thinking</li>
-                            <li>Foundations of Leadership</li>
-                            <li>Introduction to Management</li>
-                            <li>Ethics</li>
-                            <li>Philosophy of Law</li>
-                            <li>Cyber Policies, Ethics, and Law</li>
-                        </ul>
-                    </div>
-                    <p class="course-reminder">Click <a href="https://catalog.canisius.edu/undergraduate/courses/csc/">here</a> to read the Computer Science course catalog!</p>
                 </div>
-
-                <!-- Major Projects -->
-                <div class="tab-contents-edu" id="major-projects">
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>Distributed Computing Exercise</h3>
-                            <h4>Fall 2020</h4>
+                <div class="accordion-item">
+                    <span class="accordion-item--header">Canisius College, Quantitative Sciences Department</span>
+                    <span class="accordion-item--header">|</span>
+                    <span class="accordion-item--header">Tutor and Teacher's Assistant</span>
+                    <ion-icon name="chevron-down-outline" class="accordion-item--icon"></ion-icon>
+                    <div class="accordion-item--content">
+                        <div class="grid grid--2-cols-third">
+                            <div class="employer-details">
+                                <img src="img/work-exp/canisius-college.jpg" alt="Canisius College"
+                                    class="employer-details--image">
+                                <span class="employer-details--employer">Canisius College</span>
+                                <span class="employer-details--address">2001 Main St, Buffalo, NY 14208</span>
+                                <span class="employer-details--date">February 2021 - May 2022</span>
+                            </div>
+                            <div class="job-responsibilities">
+                                <h3 class="heading-tertiary">Responsibilities</h3>
+                                <ul class="job-responsibilities--list">
+                                    <li class="job-responsibilities--item">
+                                        Assisted students with understanding class materials in face-to-face and online
+                                        mediums
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Managed the Computer Science department’s tutoring program by creating the
+                                        tutoring schedule and operating as a source of support and assistance for
+                                        emerging issues
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Represented the Computer Science department as a student panelist
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Cybersecurity Principles (CYB 500) | Spring 2022
+                                        <ul class="job-responsibilities--nested-list">
+                                            <li class="job-responsibilities--nested-item">
+                                                Supported laboratory sessions with class-wide and one-on-one assistance
+                                            </li>
+                                            <li class="job-responsibilities--nested-item">
+                                                Directed the class through laboratory assignments, including the Social
+                                                Engineering Toolkit, Steganography, Password Cracking, Wireshark, and
+                                                Heartbleed Attack projects.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Information Organization and Processing (CSC 310) | Spring 2022
+                                        <ul class="job-responsibilities--nested-list">
+                                            <li class="job-responsibilities--nested-item">
+                                                Managed a group of three students in a semester-long MySQL database
+                                                project as their Project Lead
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Distributed Computing and Operating System Design (CSC 330) | Fall 2021
+                                        <ul class="job-responsibilities--nested-list">
+                                            <li class="job-responsibilities--nested-item">
+                                                Created and graded class materials, such as the first exam, homework
+                                                assignments, and lecture material
+                                            </li>
+                                            <li class="job-responsibilities--nested-item">
+                                                Designed lectures and presented on Java, Object-Oriented Programming,
+                                                and Data Structures
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Automata and Algorithms (CSC 281) | Spring 2021
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p>Created a <span>distributed information processing and querying system</span> capable of handling large quantities of data by leveraging the <span>MPI library</span>.</p>
-                        <p>Developed in <span>C++</span>.</p>
                     </div>
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>Color-Ona</h3>
-                            <h4>Fall 2020</h4>
+                </div>
+                <div class="accordion-item">
+                    <span class="accordion-item--header">Buffalo Computer Graphics</span>
+                    <span class="accordion-item--header">|</span>
+                    <span class="accordion-item--header">Automated Testing Intern</span>
+                    <ion-icon name="chevron-down-outline" class="accordion-item--icon"></ion-icon>
+                    <div class="accordion-item--content">
+                        <div class="grid grid--2-cols-third">
+                            <div class="employer-details">
+                                <img src="img/work-exp/buffalo-computer-grahics.jpg" alt="Buffalo Copmuter Graphics"
+                                    class="employer-details--image">
+                                <span class="employer-details--employer">Buffalo Computer Graphics</span>
+                                <span class="employer-details--address">4185 Bayview Rd, Blasdell, NY 14219</span>
+                                <span class="employer-details--date">May 2021 - August 2021</span>
+                                <span class="employer-details--date">January 2022</span>
+                            </div>
+                            <div class="job-responsibilities">
+                                <h3 class="heading-tertiary">Responsibilities</h3>
+                                <ul class="job-responsibilities--list">
+                                    <li class="job-responsibilities--item">
+                                        Created and executed automated tests for the DisasterLAN program using Robot
+                                        Framework
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Modified existing documents in Microsoft Word to conform to and meet ISO
+                                        requirements
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Wrote technical documentation for an in-house browser extension tool
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Developed a tool in Robot Framework to generalize our testing object library
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p>Operated as <span>Project Manager and programmer</span> for a semester-long project <span>creating a video game</span>.</p>
-                        <p>Developed in <span>Java</span> using the <span>LibGDX library</span>.</p>
                     </div>
-                    <div class="section-topic">
-                        <div class="section-header">
-                            <h3>Resume Website</h3>
-                            <h4>Spring 2022</h4>
+                </div>
+                <div class="accordion-item">
+                    <span class="accordion-item--header">Canisius College, New Griff Orientation</span>
+                    <span class="accordion-item--header">|</span>
+                    <span class="accordion-item--header">Lead Orientation Leader</span>
+                    <ion-icon name="chevron-down-outline" class="accordion-item--icon"></ion-icon>
+                    <div class="accordion-item--content">
+                        <div class="grid grid--2-cols-third">
+                            <div class="employer-details">
+                                <img src="img/work-exp/canisius-college.jpg" alt="Canisius College"
+                                    class="employer-details--image">
+                                <span class="employer-details--employer">Canisius College</span>
+                                <span class="employer-details--address">2001 Main St, Buffalo, NY 14208</span>
+                                <span class="employer-details--date">June 2020 - August 2020</span>
+                            </div>
+                            <div class="job-responsibilities">
+                                <h3 class="heading-tertiary">Responsibilities</h3>
+                                <ul class="job-responsibilities--list">
+                                    <li class="job-responsibilities--item">
+                                        Served as a leader of academic and campus information for incoming
+                                        first-year students and orientation leaders
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Conducted meetings and presentations for transfer students and Computer
+                                        Science major students
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Created content weekly for the New Student Orientation Instagram account
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Composed sections for the Orientation Leader Manual, including a guide on
+                                        how to operate classroom computer equipment, NSO contact sheets, and campus
+                                        resources
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Directed two New Student Orientation videos, including a welcome video for
+                                        the organization’s Instagram page and a tutorial video for online resources
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Designed and executed a campus scavenger hunt that operated beyond
+                                        expectations
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Assisted a local party event company in cleaning up the campus
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p>Produced a <span>personal resume website</span> as the capstone project of my Web Development class.</p>
-                        <p>Developed in <span>HTML, CSS, Javascript,</span> and <span>PHP</span>.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <span class="accordion-item--header">Canisius College, New Griff Orientation</span>
+                    <span class="accordion-item--header">|</span>
+                    <span class="accordion-item--header">Orientation Leader</span>
+                    <ion-icon name="chevron-down-outline" class="accordion-item--icon"></ion-icon>
+                    <div class="accordion-item--content">
+                        <div class="grid grid--2-cols-third">
+                            <div class="employer-details">
+                                <img src="img/work-exp/canisius-college.jpg" alt="Canisius College"
+                                    class="employer-details--image">
+                                <span class="employer-details--employer">Canisius College</span>
+                                <span class="employer-details--address">2001 Main St, Buffalo, NY 14208</span>
+                                <span class="employer-details--date">August 2019</span>
+                            </div>
+                            <div class="job-responsibilities">
+                                <h3 class="heading-tertiary">Responsibilities</h3>
+                                <ul class="job-responsibilities--list">
+                                    <li class="job-responsibilities--item">
+                                        Assisted New Griff Orientation in welcoming Canisius College’s class of 2023
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Collaborated with a partner to direct a student group through social and
+                                        learning opportunities direct a 30 person group through social and learning
+                                        opportunities
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <span class="accordion-item--header">Consumer's Beverages</span>
+                    <span class="accordion-item--header">|</span>
+                    <span class="accordion-item--header">Store Clerk</span>
+                    <ion-icon name="chevron-down-outline" class="accordion-item--icon"></ion-icon>
+                    <div class="accordion-item--content">
+                        <div class="grid grid--2-cols-third">
+                            <div class="employer-details">
+                                <img src="img/work-exp/consumers-beverages.jpg" alt="Consumer's Beverages"
+                                    class="employer-details--image">
+                                <span class="employer-details--employer">Consumer's Beverages</span>
+                                <span class="employer-details--address">6161 West Quaker St,</span>
+                                <span class="employer-details--address">Orchard Park, NY 14127</span>
+                                <span class="employer-details--date">May 2019 - July 2019</spa>
+                            </div>
+                            <div class="job-responsibilities">
+                                <h3 class="heading-tertiary">Responsibilities</h3>
+                                <ul class="job-responsibilities--list">
+                                    <li class="job-responsibilities--item">
+                                        Processed cash and credit transactions, tendering correct change to patrons
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Stocked shelves and ice bins, calculated returnable containers, and tapped kegs
+                                        to the satisfaction of customers and at the standards set by Consumer’s
+                                        Beverages
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Resolved customer concerns positively and professionally to ensure recurring
+                                        business
+                                    </li>
+                                    <li class="job-responsibilities--item">
+                                        Maintained a clean environment for patrons and fellow employees
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Photo Bar -->
-    <section class="photo-bar" id="photo-bar">
-        <img src="images/photo-gallery/bjj.jpg" alt="bjj">
-        <img src="images/photo-gallery/steak.jpg" alt="steak">
-        <img src="images/photo-gallery/chess.jpg" alt="chess">
-    </section>
-
-    <!-- Work Experience -->
-    <section class="work-experience" id="work-experience">
-        <h2 class="section-title">Work Experience</h2>
-
-        <!-- CYBRA Corporation -->
-        <div class="job" id="cybra-corporation">
-            <div class="employment-details">
-                <img src="images/work-experience/cybra-corporation.jpg" alt="cybra-corporation">
-                <div class="employment-text">
-                    <h3>CYBRA Corporation</h3>
-                    <h4>West Seneca, NY</h4>
-                    <h4>July 2022 - March 2023</h4>
-                </div>
+        <section class="section-photo-bar">
+            <div class="container photo-bar">
+                <img src="img/photo-bar/programming.jpg" alt="Code on screen" class="photo-bar--img">
+                <img src="img/photo-bar/spider-man.jpg" alt="Spider-Man" class="photo-bar--img">
+                <img src="img/photo-bar/studying.jpg" alt="Notebook with pen" class="photo-bar--img">
             </div>
-            <div class="responsibilities">
-                <h3>Junior Software Engineer</h3>
-                <h4>Responsibilities</h4>
-                <ul>
-                    <li>Participated as an active component of an <span>Agile development</span> team, often collaborating with other developers</li>
-                    <li><span>Debugged</span> current and legacy software, sometimes on client-specific copies of the application</li>
-                    <li>Contributed to the development of an upcoming web-based product using the <span>Angular / Spring Boot stack</span></li>
-                    <li>Instrumental in <span>designing and implementing a new UI scheme</span> in our MarkMagic Lite application</li>
-                    <li>Skilled enough to <span>earn responsibility over critical components</span> of our new product <span>three weeks into employment</span></li>
-                </ul>
-            </div>
-        </div>
+        </section>
 
-        <!-- Canisius College, QSD -->
-        <div class="job" id="canisius-college-qsd">
-            <div class="employment-details">
-                <img src="images/work-experience/canisius-college.jpg" alt="canisius-college">
-                <div class="employment-text">
-                    <h3>Canisius College, Quantitative Sciences Department</h3>
-                    <h4>Buffalo, NY</h4>
-                    <h4>February 2021 - May 2022</h4>
-                </div>
+        <section class="section-contact-me" id="contact-me">
+            <div class="container">
+                <span class="sub-heading">Contact Me</span>
+                <h2 class="heading-secondary">Talk tech to me</h2>
             </div>
-            <div class="responsibilities">
-                <h3>Department Tutor and Teacher's Assistant</h3>
-                <h4>Responsibilities</h4>
-                <ul>
-                    <li><span>Assisted students</span> with understanding class materials in <span>face-to-face and online mediums</span></li>
-                    <li><span>Managed the Computer Science department’s tutoring program</span> by creating the tutoring schedule and operating as a source of support and assistance for emerging issues </li>
-                    <li>Represented the Computer Science department as a <span>student panelist</span></li>
-                    <li><span class="course-title">Cybersecurity Principles</span> (CYB 500) | Spring 2022</li>
-                        <ul>
-                            <li>Suppored laboratory sessions with <span>class-wide and one-on-one assistance</span></li>
-                            <li>Directed the class through laboratory assignments, including the <span>Social Engineering Toolkit</span>, <span>Steganography</span>, <span>Password Cracking</span>, <span>Wireshark</span>, and <span>Heartbleed Attack</span> projects</li>
-                        </ul>
-                    <li><span class="course-title">Information Organization and Processing</span> (CSC 310) | Spring 2022</li>
-                        <ul>
-                            <li><span>Managed a group</span> of three students in a semester-long MySQL database project as their <span>Project Lead</span></li>
-                        </ul>
-                    <li><span class="course-title">Distributed Computing and Operating System Design</span> (CSC 330) | Fall 2021</li>
-                        <ul>
-                            <li><span>Graded exams</span> using a D2L rubric system, returning with <span>feedback for improved resubmissions</span></li>
-                        </ul>
-                    <li><span class="course-title">Large-Scale Programming</span> (CSC 213) Fall 2021</li>
-                        <ul>
-                            <li><span>Created and graded class materials</span>, including the first exam, homework assignments, and lecture material</li>
-                            <li><span>Designed lectures</span> and <span>presented</span> on Java, Object-Oriented Programming, and Data Structures</li>
-                        </ul>
-                    <li><span class="course-title">Automata and Algorithms</span> (CSC 281) | Spring 2021</li>
-                    <ul>
-                        <li><span>Graded homework and laboratory assignments</span> using a D2L rubric system, returning them with hints and concerns for <span>improved resubmissions</span></li>
+
+            <div class="container flex-between">
+                <div class="contact-me--details">
+                    <div class="contact-detail">
+                        <ion-icon name="mail-outline" class="contact-detail--icon"></ion-icon>
+                        <p class="contact-detail--info">zacharypataky@gmail.com</p>
+                    </div>
+                    <div class="contact-detail">
+                        <ion-icon name="call-outline" class="contact-detail--icon"></ion-icon>
+                        <p class="contact-detail--info">716.997.2966</p>
+                    </div>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.facebook.com/zacharyapataky" class="social-link">
+                                <ion-icon name="logo-facebook" class="social-link--icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/zacharypataky" class="social-link">
+                                <ion-icon name="logo-instagram" class="social-link--icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/zacharypataky/" class="social-link">
+                                <ion-icon name="logo-linkedin" class="social-link--icon"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ZacharyPataky" class="social-link">
+                                <ion-icon name="logo-github" class="social-link--icon"></ion-icon>
+                            </a>
+                        </li>
                     </ul>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Buffalo Computer Graphics -->
-        <div class="job" id="buffalo-computer-graphics">
-            <div class="employment-details">
-                <img src="images/work-experience/buffalo-computer-graphics.jpg" alt="buffalo-computer-graphics">
-                <div class="employment-text">
-                    <h3>Buffalo Computer Graphics</h3>
-                    <h4>Blasdell, NY</h4>
-                    <h4>May 2021 - August 2021,</h4>
-                    <h4>January 2022</h4>
+                    <a href="resources/pataky-resume.pdf" class="btn btn--full" download>Download Resume</a>
                 </div>
+                <form action="#" class="contact-me--form flex--66-percent">
+                    <input type="text" class="form-input" id="name" placeholder="Your name" required>
+                    <input type="email" class="form-input" id="email" placeholder="Your email address" required>
+                    <textarea name="message" class="form-input" id="message" rows="6" placeholder="Your message"
+                        required></textarea>
+                    <button type="submit" class="form-btn">Submit</button>
+                </form>
             </div>
-            <div class="responsibilities">
-                <h3>Automated Testing Intern</h3>
-                <h4>Responsibilities</h4>
-                <ul>
-                    <li><span>Created and executed automated tests</span> for the DisasterLAN program using <span>Robot Framework</span></li>
-                    <li><span>Modified existing documents</span> in Microsoft Word to conform to and meet <span>ISO requirements</span></li>
-                    <li><span>Wrote technical documentation</span> for an in-house browser extension tool</li>
-                    <li><span>Developed a tool</span> in Robot Framework to <span>generalize our testing object library</span></li>
-                </ul>
-            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Last Updated: May 2023</p>
         </div>
-
-        <!-- Canisius College, NGO -->
-        <div class="job" id="canisius-college-ngo">
-            <div class="employment-details">
-                <img src="images/work-experience/canisius-college.jpg" alt="canisius-college">
-                    <div class="employment-text">
-                    <h3>Canisius College, New Griff Orientation</h3>
-                    <h4>Buffalo, NY</h4>
-                    <h4>June 2020 - August 2020,</h4>
-                    <h4>August 2019</h4>
-                </div>
-            </div>
-            <div class="two-responsibilities">
-                <div class="responsibilities">
-                    <h3>Lead Orientation Leader <span>| June 2020 - August 2020</span></h3>
-                    <h4>Responsibilities</h4>
-                    <ul>
-                        <li><span>Served as a leader of academic and campus information</span> for incoming first-year students and orientation leaders</li>
-                        <li><span>Conducted meetings and presentations</span> for transfer students and Computer Science major students</li>
-                        <li><span>Created content weekly</span> for the New Student Orientation Instagram account</li>
-                        <li><span>Composed sections for the Orientation Leader Manual</span>, including a guide on how to operate classroom computer equipment, NSO contact sheets, and campus resources</li>
-                        <li><span>Directed two New Student Orientation videos</span>, including a welcome video for the organization’s Instagram page and a tutorial video for online resources</li>
-                        <li>Designed and executed a campus scavenger hunt that <span>operated beyond expectations</span></li>
-                        <li><span>Assisted a local party event company</span> in cleaning up the campus</li>
-                    </ul>
-                </div>
-                <div class="responsibilities">
-                    <h3>Orientation Leader <span>| August 2019</span></h3>
-                    <h4>Responsibilities</h4>
-                    <ul>
-                        <li>Assisted New Griff Orientation in <span>welcoming Canisius College’s class of 2023</span></li>
-                        <li>Collaborated with a partner to <span>direct a student group through social and learning opportunities</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Consumer's Beverages -->
-        <div class="job" id="consumers-beverages">
-            <div class="employment-details">
-                <img src="images/work-experience/consumers-beverages.jpg" alt="consumers-beverages">
-                <div class="employment-text">
-                    <h3>Consumer's Beverages</h3>
-                    <h4>Orchard Park, NY</h4>
-                    <h4>May 2019 - July 2019</h4>
-                </div>
-            </div>
-            <div class="responsibilities">
-                <h3>Store Clerk</h3>
-                <h4>Responsibilities</h4>
-                <ul>
-                    <li><span>Processed cash and credit transactions</span>, tendering correct change to patrons</li>
-                    <li><span>Stocked shelves and ice bins</span>, <span>calculated returnable containers</span>, and <span>tapped kegs</span> to the satisfaction of customers and at the standards set by Consumer’s Beverages</li>
-                    <li><span>Resolved customer concerns</span> positively and professionally to ensure recurring business</li>
-                    <li><span>Maintained a clean environment</span> for patrons and fellow employees</li>
-                </ul>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Photo Bar -->
-    <section class="photo-bar" id="photo-bar">
-        <img src="images/photo-gallery/programming.jpg" alt="programming">
-        <img src="images/photo-gallery/spider-man.jpg" alt="spider-man">
-        <img src="images/photo-gallery/studying.jpg" alt="studying">
-    </section>
-
-    <!-- Contact Me -->
-    <section class="section" id="contact-me">
-        <div class="contact-me-details">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-me-detail">
-                <i class="bx bx-envelope"></i>
-                <p>zacharypataky@gmail.com</p>
-            </div>
-            <div class="contact-me-detail">
-                <i class="bx bx-phone"></i>
-                <p>(716) 997-2966</p>
-            </div>
-            <div class="contact-me-social">
-                <a href="https://www.facebook.com/zacharyapataky"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/zacharypataky/"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/zacharypataky/"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/ZacharyPataky"><i class="bx bxl-github"></i></a>
-            </div>
-            <a href="resources/pataky-resume.pdf" class="button" download>Download Resume</a>
-        </div>
-        <div class="contact-me-form">
-            <form action="https://formspree.io/f/xayzbvvl" method="POST" id="contact-me-form">
-                <input type="text" name="name" placeholder="Your name" required>
-                <input type="email" name="email" placeholder="Your email" required>
-                <textarea name="message" rows="6" placeholder="Your message"></textarea>
-                <button type="submit" class="button resume-button">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <script src="app.js"></script>
+    </footer>
 </body>
 
 </html>
