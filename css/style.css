@@ -221,7 +221,7 @@
 
 .school-details--image {
     border-radius: 10px;
-    box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.2);
+    /* box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.2); */
     width: 25%;
 }
 
@@ -307,7 +307,7 @@
 
 .employer-details--image {
     border-radius: 10px;
-    box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.2);
+    /* box-shadow: 0 0 3.2rem rgba(139, 223, 253, 0.2); */
     width: 50%;
 }
 
