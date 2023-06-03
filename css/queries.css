@@ -209,8 +209,8 @@ Instead, 1rem = 1em = 16px */
     }
 
     .group--header--title {
-        font-size: 1.8rem;
-        max-width: 80%;
+        font-size: 1.7rem;
+        max-width: 60%;
     }
 
     .group--header--sub-title {
