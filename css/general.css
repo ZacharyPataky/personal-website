@@ -250,6 +250,7 @@ body {
 }
 
 .accordion-item--icon {
+    align-self: start;
     height: 2.4rem;
     width: 2.4rem;
 }
