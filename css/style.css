@@ -39,11 +39,13 @@
     scale: 1.2;
 }
 
-.logo--mobile {
+.logo--mobile:link,
+.logo--mobile:visited {
     color: #f8f8f2;
     display: none;
     font-size: 2.4rem;
     font-weight: 600;
+    text-decoration: none;
 }
 
 /**************/

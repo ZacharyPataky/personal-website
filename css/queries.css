@@ -127,7 +127,7 @@ Instead, 1rem = 1em = 16px */
     }
 
     .about-me--image {
-        width: 75%;
+        width: 100%;
     }
 
     .photo-bar {
@@ -148,6 +148,7 @@ Instead, 1rem = 1em = 16px */
 
     .employer-details--info {
         align-items: start;
+        gap: 1rem;
     }
 
     .employer-details--image {
@@ -209,6 +210,7 @@ Instead, 1rem = 1em = 16px */
 
     .group--header--title {
         font-size: 1.8rem;
+        max-width: 80%;
     }
 
     .group--header--sub-title {
@@ -221,48 +223,3 @@ Instead, 1rem = 1em = 16px */
         text-align: start;
     }
 }
-
-/* @media(max-width: 41em) {
-    .heading-tertiary {
-        margin-bottom: 2.4rem;
-    }
-
-    .photo-bar--img {
-        width: 75%;
-    }
-
-    .grid--2-cols-third {
-        grid-template-columns: 1fr;
-        row-gap: 3.2rem;
-    }
-
-    .accordion-item--header {
-        font-size: 1.6rem;
-    }
-
-    .employer-details--image {
-        grid-area: ed-img;
-        width: 50%;
-    }
-
-    .employer-details--employer {
-        grid-area: ed-emp;
-    }
-
-    .employer-details--address {
-        grid-area: ed-add;
-    }
-
-    .employer-details--date {
-        grid-area: ed-date;
-    }
-
-    .employer-details {
-        display: grid;
-        gap: 0;
-        grid-template-areas:
-            'ed-img ed-emp'
-            'ed-img ed-add'
-            'ed-img ed-date';
-    }
-} */
