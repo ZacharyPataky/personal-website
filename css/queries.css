@@ -196,6 +196,15 @@ Instead, 1rem = 1em = 16px */
 /**************************************/
 
 @media(max-width: 41em) {
+    html {
+        /* 7px / 16px = 0.44 = 44% */
+        font-size: 44%;
+    }
+
+    .heading-tertiary {
+        margin-bottom: 1.2rem;
+    }
+
     .container.accordion {
         padding: 0;
     }
@@ -221,5 +230,9 @@ Instead, 1rem = 1em = 16px */
     .employer-details--address,
     .employer-details--date {
         text-align: start;
+    }
+
+    .employer-details--info {
+        gap: 0.8rem;
     }
 }
