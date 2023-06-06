@@ -383,7 +383,10 @@
     width: 2.4rem;
 }
 
-.contact-detail--info {}
+.contact-detail--info {
+    color: #f8f8f2;
+    text-decoration: none;
+}
 
 .social-links {
     display: flex;
