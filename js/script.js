@@ -61,6 +61,10 @@ mobileNavLinks.forEach(function (link) {
 
 //////////////////////////////////////////////////////////////
 // Education - Tab Links
+
+document.querySelector('.education-header-links')
+    .addEventListener('click', e => e.stopPropagation());
+
 const tabLinks = document.getElementsByClassName('tab-link');
 const tabContents = document.getElementsByClassName('tab-contents');
 

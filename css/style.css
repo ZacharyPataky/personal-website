@@ -36,7 +36,7 @@
 .logo:hover,
 .logo:active {
     color: #f1fa8c;
-    scale: 1.2;
+    scale: 1.05;
 }
 
 .logo--mobile:link,
@@ -72,6 +72,7 @@
 .main-nav-link:hover,
 .main-nav-link:active {
     color: #ff79c6;
+    scale: 1.05;
 }
 
 /*********************/
@@ -170,7 +171,7 @@
     flex-direction: column;
     font-size: 1.6rem;
     gap: 1.8rem;
-    padding: 2.4rem
+    padding: 2.4rem;
 }
 
 .tab-link:hover {
